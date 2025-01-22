@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/styles/nav-foot.css">
+  <link rel="stylesheet" href="../assets/styles/test.css">
+  <title>Test de Nivel de Inglés</title>
+</head>
+<body>
+  <nav>
+    <h1>English with Ease</h1>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="cursos.html">Cursos</a></li>
+      <li><a href="about-us.html">About us</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="test-view.html">Test your English</a></li>
+    </ul>
+    <button>Inscribirme</button>
+  </nav>
+
+  <main>
+    <!-- Formulario inicial -->
+    <section id="form-container">
+      <h3>Completa tus datos antes de iniciar el test</h3>
+      <form id="user-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="lastname">Apellidos:</label>
+        <input type="text" id="lastname" name="lastname" required>
+        
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="birthdate">Fecha de nacimiento:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+        
+        <label for="contact-method">¿Prefieres WhatsApp o llamada?</label>
+        <select id="contact-method" name="contact-method" required>
+          <option value="whatsapp">WhatsApp</option>
+          <option value="call">Llamada</option>
+        </select>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <button type="submit">Iniciar Test</button>
+      </form>
+    </section>
+
+    <!-- Contenedor del Test -->
+    <section id="test-container" style="display: none;">
+      <h1 id="question">Pregunta</h1>
+      <div id="options"></div>
+      <button id="next" disabled>Siguiente</button>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <p>¿Tienes preguntas?</p>
+      <a href="mailto:contacto@eweacademy.com" target="_blank">Contáctanos</a>
+      <p>¿Listo para dominar el inglés?</p>
+      <a href="">Inscríbete</a>
+    </div>
+    <div>
+      <a href="mailto:contacto@eweacademy.com" target="_blank">contacto@eweacademy.com</a>
+      <a href="https://wa.me/525543826531?text=Hola,%20quiero%20más%20información%20sobre%20los%20cursos%20de%20inglés." target="_blank">+52 55 4382 6531</a>
+      <a href="https://www.facebook.com/EngwithEase" target="_blank">
+        <img src="../assets/images/facebook.png" alt="Facebook Logo">
+      </a>
+      <p>© 2025 English with Ease. Todos los derechos reservados.</p>
+    </div>
+    <div>
+      <p>Este sitio fue diseñado por Dev4ll. ¿Te gustaría uno igual? Descubre más aquí.</p>
+    </div>
+  </footer>
+
+  <script src="../js/test.js"></script>
+</body>
+</html>

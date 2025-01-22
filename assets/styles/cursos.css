@@ -1,0 +1,40 @@
+.niveles {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.niveles h2 {
+	text-align: center;
+	width: 50%;
+}
+
+.niveles button {
+	height: 200px;
+	width: 200px;
+}
+
+.niveles button img {
+	height: 70%;
+	width: 70%;
+}
+
+.subniveles {
+	display: flex;
+}
+
+#conv-btn {
+	height: 60px;
+	margin: 50px;
+}
+
+#conv-info img {
+  height: 200px;
+}
+
+.conv-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

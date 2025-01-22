@@ -1,0 +1,7 @@
+.main-div div {
+  display: flex;
+}
+
+.main-div div img {
+  height: 300px;
+}

@@ -1,0 +1,77 @@
+/* Home */
+
+.home {
+  height: 95vh;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
+.pres {
+  width: 50%;
+}
+
+.form {
+  width: 50%;
+}
+
+.home form {
+  border: solid 1px;
+  gap: 1rem;
+}
+
+/* Forma de trabajo */
+
+.forma-trabajo h2 {
+  text-align: center;
+}
+
+.forma-trabajo img {
+  height: 300px;
+}
+
+.forma-div {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+/* Porque */
+
+.porque h2 {
+  text-align: center;
+}
+
+.porque img {
+  height: 300px;
+}
+
+.porque-div {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.porque p {
+  text-align: center;
+}
+
+/* Como Unirte */
+
+.cu-div {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.cu-div div {
+  width: 25%;
+}
+
+.como-unirte h2 {
+  text-align: center;
+}
+
+.como-unirte img {
+  height: 300px;
+}
