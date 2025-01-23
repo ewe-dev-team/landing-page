@@ -10,56 +10,58 @@
 <body>
 
   <nav>
-    <h1>English with Ease</h1>
+    <img src="../assets/images/logo.png" alt="logo">
     <ul>
       <li><a href="index.html">Inicio</a></li>
       <li><a href="views/cursos.html">Cursos</a></li>
       <li><a href="views/about-us.html">About us</a></li>
       <li><a href="views/contacto.html">Contacto</a></li>
       <li><a href="views/test-view.html">Test your English</a></li>
+      <li class="insc-btn"><a href="views/inscripcion.html">Inscribirme</a></li>
     </ul>
-    <button>Inscribirme</button>
   </nav>
 
   <section class="home">
     <div class="pres">
       <h3>Con nuestro curso de inglés 100% online, aprenderás de manera efectiva y dominarás el idioma paso a paso, sin importar si estás comenzando o ya tienes experiencia. Tenemos el curso ideal para ti.</h3>
     </div>
-    <div class="form">
-      <form action="">
+    <div class="form-section">
+      <div>
         <p>Regístrate ahora para recibir más información sobre el curso y conocer todos los detalles de los costos.</p>
-        <input type="text" placeholder="Nombre">
-        <input type="text" placeholder="Correo">
-        <input type="text" placeholder="Teléfono">
-        <input type="text" placeholder="Edad">
+      <form action="">
+        <input id="name" type="text" placeholder="Nombre">
+        <input id="age" type="number" placeholder="Edad">
+        <input id="email" type="email" placeholder="Correo">
+        <input id="tel" type="tel" placeholder="Teléfono">
         <button>Enviar</button>
       </form>
+      </div>
     </div>
   </section>
 
   <section class="forma-trabajo">
     <h2>Nuestra forma de trabajo</h2>
     <div class="forma-div">
-      <img src="assets/images/sesiones-vivo.webp" alt="sesiones en vivo">
+      <img src="assets/images/sesiones-en-vivo.png" alt="sesiones en vivo">
       <div>
-        <h3>Aprende con ayuda</h3>
-        <h3>Sesiones en Vivo</h3>
+        <h3 class="subtitle">Aprende con ayuda</h3>
+        <h3 class="title">Sesiones en Vivo</h3>
         <p>No te limites a libros, practica conversación, aclara dudas  y participa en actividades grupales para fortalecer tus habilidades. Sesiones dinámicas y enfocadas en conversación, gramática y vocabulario.</p>
       </div>
     </div>
-    <div class="forma-div">
-      <img src="assets/images/trabajo-plat.webp" alt="Practica Adicional">
+    <div class="forma-div" id="forma-2nd">
+      <img src="assets/images/practica-adicional.png" alt="Practica Adicional">
       <div>
-        <h3>Aprende con confianza</h3>
-        <h3>Práctica Adicional</h3>
+        <h3 class="subtitle">Aprende con confianza</h3>
+        <h3 class="title">Práctica Adicional</h3>
         <p>Complementa tus sesiones con materiales y recursos en plataforma para que puedas practicar a tu ritmo y consolidar lo aprendido.</p>
       </div>
     </div>
     <div class="forma-div">
-      <img src="assets/images/monitorea.webp" alt="Evaluciones Periódicas">
+      <img src="assets/images/evaluaciones-periodicas.png" alt="Evaluciones Periódicas">
       <div>
-        <h3>Monitorea tu progreso</h3>
-        <h3>Evaluaciones Periódicas</h3>
+        <h3 class="subtitle">Monitorea tu progreso</h3>
+        <h3 class="title">Evaluaciones Periódicas</h3>
         <p>Realiza evaluaciones regulares para medir tu avance, identificar áreas de mejora y asegurarte de alcanzar tus metas de aprendizaje.</p>
       </div>
   </section>
@@ -67,27 +69,27 @@
   <section class="porque">
     <h2>¿Por qué aprender con English with Ease?</h2>
     <div class="porque-div">
-      <img src="assets/images/cont-niv.png" alt="Contenido a tu nivel">
+      <img src="assets/images/contenido-nivel.png" alt="Contenido a tu nivel">
       <div>
-        <h3>Contenido a tu nivel</h3>
+        <h3 class="title">Contenido a tu nivel</h3>
         <p>Contenidos estructurados por nivel, desde principiante hasta intermedio avanzado.</p>
       </div>
     </div>
-    <div class="porque-div">
-      <img src="assets/images/obj-claros.png" alt="Objetivos claros">
+    <div class="porque-div" id="forma-2nd">
+      <img src="assets/images/objetivos-claros.png" alt="Objetivos claros">
       <div>
-        <h3>Objetivos claros</h3>
+        <h3 class="title">Objetivos claros</h3>
         <p>Progresión gradual para que avances de forma segura y efectiva.</p>
       </div>
     </div>
     <div class="porque-div">
-      <img src="assets/images/herr-int.png" alt="Herramienta interactiva">
+      <img src="assets/images/herraminetas-inter.png" alt="Herramienta interactiva">
       <div>
-        <h3>Herramienta interactiva</h3>
+        <h3 class="title">Herramienta interactiva</h3>
         <p>Acceso a recursos interactivos que hacen el aprendizaje más atractivo y accesible.</p>
       </div>
     </div>
-    <p>¡Aprende inglés de forma práctica, desde donde estés, y alcanza el siguiente nivel!</p>
+    <p class="p-foot">¡Aprende inglés de forma práctica, desde donde estés, y alcanza el siguiente nivel!</p>
   </section>
 
   <section class="como-unirte">
@@ -95,22 +97,22 @@
     <div class="cu-div">
       <div>
         <img src="assets/images/llena-datos.webp" alt="Llena tus datos">
-        <h3>Llena tus datos</h3>
+        <h3 class="title">Llena tus datos</h3>
         <p>Proporciona tus datos personales con los que podremos identificarte</p>
       </div>
       <div>
         <img src="assets/images/descubre-nivel.webp" alt="Realiza el test">
-        <h3>Descubre tu nivel de inglés</h3>
+        <h3 class="title">Realiza tu test</h3>
         <p>Realiza nuestro test de nivel y descubre en qué nivel te encuentras</p>
       </div>
       <div>
         <img src="assets/images/realiza-pago.webp" alt="Realiza tu pago">
-        <h3>Realiza tu pago</h3>
+        <h3 class="title">Finaliza tu pago</h3>
         <p>Realiza el pago de tu mensualidad de manera segura y rápida</p>
       </div>
       <div>
         <img src="assets/images/com-curso.jpg" alt="Comienza tu curso">
-        <h3>Comienza tu curso</h3>
+        <h3 class="title">Comienza tu curso</h3>
         <p>Comienza tu curso de inglés y aprende de manera rápida y sencilla</p>
       </div>
     </div>
@@ -129,11 +131,11 @@
       <a href="https://www.facebook.com/EngwithEase" target="_blank">
         <img src="assets/images/facebook.png" alt="Facebook Logo">
       </a>
-      <p>© 2025 English with Ease. Todos los derechos reservados.</p>
+      <p>© 2025 English with Ease.<br> Todos los derechos reservados.</p>
     </div>
   </footer>
-  <div>
-    <p>Este sitio fue diseñado por Dev4ll. ¿Te gustaría uno igual? Descubre más aquí.</p>
+  <div class="sub-footer">
+    <p>Este sitio fue diseñado por Dev 4 All. ¿Te gustaría uno igual? Descubre más aquí.</p>
   </div>
 
 </body>

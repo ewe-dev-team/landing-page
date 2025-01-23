@@ -1,77 +1,294 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Home */
 
 .home {
-  height: 95vh;
-  align-items: center;
+  padding: 200px 0 100px 0;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
+  background-color: #f4f4f4;
 }
 
 .pres {
   width: 50%;
 }
 
-.form {
-  width: 50%;
+.pres h3 {
+  color: #01002e;
+  font-family: Karla;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 100px;
 }
 
-.home form {
-  border: solid 1px;
-  gap: 1rem;
+.form-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section div {
+  width: 65%;
+  border: solid 1px #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section p {
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 60px;
+  text-align: center;
+  margin: 0;
+}
+
+.form-section form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin-bottom: 60px;
+}
+
+.form-section form input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.form-section form input:nth-child(2) {
+  width: 15%;
+}
+
+.form-section form input:nth-child(3) {
+  width: 65%;
+  margin-left: auto;
+}
+
+.form-section form input:nth-child(4) {
+  width: 45%;
+}
+
+.form-section form button {
+  padding: 10px;
+  margin: 5px 0;
+  margin-left: auto;
+  color: #ffffff;
+  background-color: #4089e9;
+  border: none;
 }
 
 /* Forma de trabajo */
 
+.forma-trabajo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+
 .forma-trabajo h2 {
   text-align: center;
+  color: #01002e;
+  font-family: Karla;
+  font-size: 50px;
+  font-style: normal; 
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 100px;
 }
 
 .forma-trabajo img {
-  height: 300px;
+  border-radius: 500px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  height: 450px;
 }
 
 .forma-div {
   display: flex;
   gap: 50px;
   margin-bottom: 50px;
+  margin: 25px 100px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+#forma-2nd {
+  flex-direction: row-reverse;
+}
+
+.forma-div div {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.subtitle {
+  color: #01002e; 
+  font-family: Karla;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+}
+
+.title {
+  color: #01002e;
+  font-family: Karla;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin: 10px 0;
+}
+
+.forma-div p {
+  color: #01002e;
+  font-family: Karla;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 80%;
 }
 
 /* Porque */
 
+.porque {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 50px;
+  padding-bottom: 100px;
+  background-color: #4089e9;
+  color: #ffffff;
+}
+
 .porque h2 {
   text-align: center;
+  font-family: Karla;
+  font-size: 50px;
+  font-style: normal; 
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 100px;
 }
 
 .porque img {
-  height: 300px;
+  height: 400px;
 }
 
 .porque-div {
   display: flex;
   gap: 50px;
-  margin-bottom: 50px;
+  margin: 0 100px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
 }
 
-.porque p {
-  text-align: center;
+.porque-div .title {
+  color: #ffffff;
 }
+
+.porque-div div {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.porque div p {
+  font-family: Karla;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 80%;
+}
+
+.p-foot {
+  font-family: Karla;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 120px 0;
+}
+
+
 
 /* Como Unirte */
 
-.cu-div {
+.como-unirte{
   display: flex;
-  gap: 50px;
-  margin-bottom: 50px;
-}
-
-.cu-div div {
-  width: 25%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 50px;
+  padding-bottom: 100px;
+  color: #01002e;
 }
 
 .como-unirte h2 {
   text-align: center;
+  font-family: Karla;
+  font-size: 50px;
+  font-style: normal; 
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 100px;
 }
 
 .como-unirte img {
-  height: 300px;
+  height: 250px;
+  width: 250px;
+  border-radius: 500px;
+  object-fit: cover;
+}
+
+.cu-div {
+  display: flex;
+  gap: 50px;
+  margin: 0 100px;
+  width: 90%;
+}
+
+.cu-div h3 {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+.cu-div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.como-unirte div p {
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 80%;
+  text-align: center;
 }
