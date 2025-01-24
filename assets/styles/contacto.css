@@ -1,0 +1,38 @@
+.contacto {
+  padding: 110px;
+  box-sizing: border-box;
+  height: calc(100vh - 142px);
+}
+
+.div-cont {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto h3 {
+  color: #01002e;
+  font-family: Karla;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.links {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.contacto a {
+  color: #01002e;
+  font-family: Karla;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+}

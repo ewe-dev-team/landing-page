@@ -1,72 +1,71 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  h1, h2 {
-    text-align: center;
-  }
-  .hidden {
-    display: none;
-  }
-  .visible {
-    display: block;
-  }
-  button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 15px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: #0056b3;
-  }
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-  #options {
-    margin: 20px 0;
-  }
-  
-  #options label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  #options input[type="radio"] {
-    accent-color: #007bff;
-    width: 20px;
-    height: 20px;
-  }
-  
-  #next {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  #next:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  
+.test {
+  padding: 110px;
+  box-sizing: border-box;
+  height: calc(100vh - 142px);
+}
+
+h1, h2 {
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+#options {
+  margin: 20px 0;
+}
+
+#options label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#options input[type="radio"] {
+  accent-color: #007bff;
+  width: 20px;
+  height: 20px;
+}
+
+#next {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#next:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
