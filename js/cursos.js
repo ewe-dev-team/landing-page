@@ -60,12 +60,14 @@ document.addEventListener('DOMContentLoaded', function() {
       const info = infoData[level];
 
       const infoHtml = `
-          <h2>${info.title}</h2>
-          <p>${info.description}</p>
-          ${info.details.map(detail => `<p>${detail}</p>`).join('')}
-          <div class="subniveles">
-            ${info.sublevels.map(sublevel => `<p>${sublevel}</p>`).join(' | ')}
-          </div>
+      <div class="info-container">
+        <h3>${info.title}</h3>
+        <h2>${info.description}</h2>
+        ${info.details.map(detail => `<p>${detail}</p>`).join('')}
+        <div class="subniveles">
+          ${info.sublevels.map(sublevel => `<p>${sublevel}</p>`).join(' | ')}
+        </div>
+      </div>
       `;
     
       infoContainer.innerHTML = infoHtml;
@@ -87,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
   convBtn.addEventListener('click', function(event) {
     event.stopPropagation();
     const convHtml = `
-      <div class="conv-container">
+      <div class="info-container conv-container">
         <div class="div1">
           <h3>C1</h3>
           <img src="../assets/images/c1-icon.png" alt="Eagle Ic">
@@ -100,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
       </div>
 
-      <div class="conv-container">
+      <div class="info-container conv-container">
         <div>
           <h3>C2</h3>
           <img src="../assets/images/c2-icon.png" alt="Eagle Ic">

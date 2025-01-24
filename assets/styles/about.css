@@ -1,7 +1,61 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  padding-top: 110px;
+}
+
+.about img {
+  height: 250px;
+  width: 250px;
+  border-radius: 500px;
+  align-self: center;
+  margin-top: 50px;
+}
+
+.about h3 {
+  color: #01002e;
+  font-family: Karla;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 50px 100px;
+  text-align: center;
+  margin: 0;
+}
+
+.about p {
+  color: #01002e;
+  font-family: Karla;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 80%;
+}
+
+.main-div {
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main-div div {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+
+.main-div div:nth-child(2) {
+  flex-direction: row-reverse;
+  margin-left: 100px;
 }
 
 .main-div div img {
-  height: 300px;
+  height: 350px;
+  width: 350px;
+  margin: 0;
 }
+

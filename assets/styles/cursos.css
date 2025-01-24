@@ -70,6 +70,39 @@
   box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.65);
 }
 
+.info-container {
+  width: 830px;
+  margin: 50px 0;
+  padding: 50px;
+  border: solid 1px #183C4B;
+  box-sizing: border-box;
+}
+
+.info-container h3 {
+  padding: 0;
+  text-align: start;
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.info-container h2 {
+  padding: 0;
+  text-align: start;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.info-container p {
+  font-size: 25px;
+}
+
+.info-container .subniveles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
 .btn-div button h2 {
 	margin: 0 0 20px 0;
 }
@@ -123,36 +156,9 @@
   line-height: normal;
   text-align: center;
   padding: 30px;
-  margin: 150px 0 20px 0;
+  margin: 150px 0;
   background-color: #fff;
   border: solid 1px #183C4B;
-}
-
-#conv-info {
-  margin: 40px 0;
-}
-
-.conv-container {
-  margin: 40px 15%;
-  border: solid 1px;
-}
-
-.conv-container h2 {
-  padding-top: 0;
-  padding: 0;
-}
-
-.conv-container div:nth-child(1) {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.conv-container div:nth-child(2) {
-  width: 60%;
-  padding: 0 30px;
 }
 
 #conv-info img {
@@ -161,7 +167,18 @@
 
 .conv-container {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
+.conv-container h3 {
+  text-align: center;
+}
+
+.conv-container div:nth-child(1) {
+  margin-right: 50px;
+  text-align: center;
+}
+
+.conv-container div:nth-child(2) {
+  width: 60%;
+}
