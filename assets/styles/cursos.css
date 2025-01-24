@@ -29,6 +29,16 @@
   font-weight: 200;
 }
 
+.niveles h2:nth-child(4) {
+  text-align: center;
+  color: #01002e;
+  font-family: Karla;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
 .cefr  {
   height: 200px;
   padding: 100px;
@@ -50,13 +60,15 @@
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  width: 250px;
+  width: 200px;
+  overflow: hidden;
+  border: none;
 }
 
-/* .btn-div button img {
-	height: 70%;
-	width: 70%;
-} */
+.btn-div button:hover {
+  scale: 103%;
+  box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.65);
+}
 
 .btn-div button h2 {
 	margin: 0 0 20px 0;
@@ -64,30 +76,34 @@
 
 #a1 {
   height: 40%;
+  background-color: #A5C6F7;
 }
 
 #a1 img {
-  height: 130px;
+  height: 120px;
 }
 
 #a2 {
-  height: 50%;
+  height: 60%;
+  background-color: #5294F7;
 }
 
 #a2 img {
-  height: 200px;
+  height: 160px;
 }
 
 #b1 {
-  height: 70%;
+  height: 80%;
+  background-color: #297BF7;
 }
 
 #b1 img {
-  height: 250px;
+  height: 220px;
 }
 
 #b2 {
-  height: 90%;
+  height: 100%;
+  background-color: #0052CD;
 }
 
 #b2 img {
@@ -99,8 +115,44 @@
 }
 
 #conv-btn {
-	height: 60px;
-	margin: 50px;
+	color: #01002e;
+  font-family: Karla;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding: 30px;
+  margin: 150px 0 20px 0;
+  background-color: #fff;
+  border: solid 1px #183C4B;
+}
+
+#conv-info {
+  margin: 40px 0;
+}
+
+.conv-container {
+  margin: 40px 15%;
+  border: solid 1px;
+}
+
+.conv-container h2 {
+  padding-top: 0;
+  padding: 0;
+}
+
+.conv-container div:nth-child(1) {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.conv-container div:nth-child(2) {
+  width: 60%;
+  padding: 0 30px;
 }
 
 #conv-info img {

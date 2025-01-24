@@ -88,8 +88,8 @@ document.addEventListener('DOMContentLoaded', function() {
     event.stopPropagation();
     const convHtml = `
       <div class="conv-container">
-        <div>
-          <h2>C1</h2>
+        <div class="div1">
+          <h3>C1</h3>
           <img src="../assets/images/c1-icon.png" alt="Eagle Ic">
           <p>Alcanzando la cima</p>
           <p>Vuela alto y con elegancia</p>
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       <div class="conv-container">
         <div>
-          <h2>C2</h2>
+          <h3>C2</h3>
           <img src="../assets/images/c2-icon.png" alt="Eagle Ic">
           <p>La cúspide del dominio</p>
           <p>Conquista los cielos</p>
