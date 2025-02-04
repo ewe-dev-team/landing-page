@@ -1,61 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  --rosa-ewe: #fdaff2;
+  --azul-ewe: #c0f9f9;
+  --rojo-ewe: #ca1217;
+  --titulos: 'Barlow Condensed', serif;
+  --subtitulos: 'Bebas Neue', serif;
+  --texto-gral: 'Nunito', serif;
+}
+
 .about {
+  padding: 110px 0;
   display: flex;
-  flex-direction: column;
-  padding-top: 110px;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #ff99aa, #ff99e2, #f8daef);
 }
 
-.about img {
-  height: 250px;
+.left-div {
+  width: 50%;
+  padding: 50px;
+  position: relative;
+}
+
+.about-title {
+  position: relative;
+}
+
+.about-title h3 {
+  font-size: 60px;
+  font-weight: 600;
+  color: var(--rosa-ewe);
+  margin: 0;
+  font-family: var(--titulos);
+  background-color: #061069;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transform: scaleY(1.4) scaleX(.9);
+  line-height: 95%;
+  border-radius: 10px;
+  width: fit-content;
+  position: absolute;
+  top: 75px;
+  left: 180px;
+}
+
+.about-title h2 {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  font-family: var(--titulos);
+  background-color: var(--rojo-ewe);
+  letter-spacing: 1px;
+  font-weight: 500;
+  transform: scaleY(1.4) scaleX(.9);
+  line-height: 95%;
+  border-radius: 10px;
+  width: fit-content;
+  position: absolute;
+  top: 153px;
+  left: 245px;
+}
+
+.left-div img {
   width: 250px;
-  border-radius: 500px;
-  align-self: center;
-  margin-top: 50px;
+  position: absolute;
+  right: 0;
+  top: 100px;
 }
 
-.about h3 {
-  color: #01002e;
-  font-family: Karla;
-  font-size: 30px;
-  font-style: normal;
+.text-div {
+  font-family: var(--texto-gral);
+  background-color: var(--azul-ewe);
+  color: #061069;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin: 50px;
+  margin-top: 350px;
+}
+
+.red {
+  color: var(--rojo-ewe);
+  text-align: justify;
+  font-family: var(--texto-gral);
+  font-size: 17px;
   font-weight: 400;
-  line-height: normal;
-  padding: 50px 100px;
-  text-align: center;
-  margin: 0;
 }
 
-.about p {
-  color: #01002e;
-  font-family: Karla;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  width: 80%;
+.text-div p {
+  text-align: justify;
+  font-family: var(--texto-gral);
+  color: #061069;
+  font-size: 17px;
+  font-weight: 400;
 }
 
-.main-div {
-  margin: 80px 0;
+.right-div {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 50px 0;
+  width: 50%;
+  align-items: end;
 }
 
-.main-div div {
+.right-div div {
+  margin: 50px 0;
+  font-family: var(--texto-gral);
   display: flex;
+  flex-direction: column;
+  align-items: flex-end ;
   justify-content: center;
-  align-items: center;
-  width: 65%;
+  height: 351px;
+  width: 752px;
 }
 
-.main-div div:nth-child(2) {
-  flex-direction: row-reverse;
-  margin-left: 100px;
+.mision {
+  background-image: url(../images/about-msion.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
-.main-div div img {
-  height: 350px;
-  width: 350px;
-  margin: 0;
+.vision {
+  background-image: url(../images/about-vision.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
+.right-div div h3 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: var(--subtitulos);
+  color: #fff;
+  background-color: var(--rojo-ewe);
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 30px 10px 10px 10px;
+  padding: 2px;
+  border-radius: 5px;
+  line-height: 90%;
+  margin-right: 67%;
+}
+
+.right-div div p {
+  text-align: justify;
+  font-family: var(--texto-gral);
+  color: #061069;
+  font-size: 17px;
+  font-weight: 400;
+  width: 70%;
+  padding-right: 50px;
+}

@@ -15,7 +15,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 110px ;
+  padding-top: 110px;
+  background: linear-gradient(180deg, #ca12188c, #fff, #c0f9f9);
 }
 
 .form-section {
@@ -73,8 +74,14 @@
   font-family: var(--texto-gral);
 }
 
+#birthdate {
+  width: 100px;
+  font-family: var(--texto-gral);
+  color: #061069;
+}
+
 .form-section form input:focus {
-  outline: 2px solid #81f5f5;
+  outline: 2px solid var(--azul-ewe);
   border-radius: 10px;
   color: #061069;
   font-family: var(--texto-gral);

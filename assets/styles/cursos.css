@@ -27,10 +27,11 @@
 }
 
 .intro-niveles h2 {
-	color: #01002e;
+	color: #061069;
   font-family: var(--texto-gral);
   font-size: 28px;
   text-align: center;
+  font-weight: 500;
   margin: 0;
   width: 50%;
 }

@@ -120,9 +120,17 @@ footer div a {
   line-height: normal;
 }
 
+footer div a:hover {
+  transform: scale(1.08);
+}
+
 footer img {
   height: 35px;
   padding: 0 5px;
+}
+
+footer img:hover {
+  transform: scale(1.1);
 }
 
 .sub-footer {

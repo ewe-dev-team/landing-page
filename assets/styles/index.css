@@ -34,11 +34,12 @@ body {
 
 .title-home {
 	position: relative;
-	width: 33.33%;
+	width: 40%;
 	height: calc(100vh - 110px);
 }
 
 .title-home h2 {
+  width: 440px;
   position: absolute;
   top: 100px;
   left: 100px;
@@ -371,12 +372,12 @@ body {
 /* Porque */
 .porque {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   background: linear-gradient(180deg, #ff99aa, #ff99e2, #f8daef);
 }
 
 .porque-title {
-  width: 600px;
+  width: 40%;
   position: relative;
   display: flex;
   align-items: center;
@@ -394,8 +395,10 @@ body {
 	transform: scaleY(1.4) scaleX(.9);
 	line-height: 125%;
 	border-radius: 10px;
-  width: max-content;
-  height: max-content;
+  width: 465px;
+  position: absolute;
+  left: 0;
+  left: 73px;
 }
 
 #con {
@@ -493,8 +496,6 @@ body {
 .p-foot {
   background-color: var(--azul-ewe);
   margin: 0;
-  flex: 1;
-  flex-basis: 100%;
   font-family: var(--subtitulos);
   font-weight: 900px;
   color: var(--rojo-ewe);
