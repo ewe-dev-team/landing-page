@@ -43,6 +43,7 @@
   align-items: center;
   background-color: var(--azul-ewe);
   border-radius: 30px;
+  margin: 50px;
 }
 
 .form-section p {

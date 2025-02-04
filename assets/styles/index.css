@@ -9,17 +9,10 @@
 	--texto-gral: 'Nunito', serif;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Home */
 
 .home {
   padding: 110px 0 100px 0;
-  height: calc(100vh - 210px);
   background: linear-gradient(180deg,  #ca121883, #ffffff, #c0f9f9);
 }
 
@@ -212,7 +205,6 @@ body {
   display: flex;
   flex-direction: column;
   background: linear-gradient(180deg,  #5a9ff8, #bbf5ff);
-  height: calc(100vh - 110px);
   padding: 0 0 100px 0;
 }
 
@@ -616,4 +608,10 @@ body {
 .como-unirte img {
   height: 100px;
   padding: 20px 0;
+}
+
+@media (max-width: 1440px) {
+  .home {
+    background-color: black;
+  }
 }

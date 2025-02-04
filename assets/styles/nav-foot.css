@@ -9,12 +9,15 @@
   --texto-gral: 'Nunito', serif;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 /* Navbar */
@@ -93,6 +96,7 @@ footer {
   box-sizing: border-box;
   font-family: var(--texto-gral);
   font-size: 13px;
+  justify-self: flex-end;
 }
 
 footer div {
@@ -144,4 +148,5 @@ footer img:hover {
   height: 40px;
   width: 100%;
   box-sizing: border-box;
+  justify-self: flex-end;
 }

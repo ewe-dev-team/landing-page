@@ -12,7 +12,6 @@
 .contacto {
   padding: 110px;
   background: linear-gradient(180deg, #5a9ff8, #bbf5ff);
-  height: calc(100vh - 110px);
 }
 
 .div-cont {
