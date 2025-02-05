@@ -9,36 +9,32 @@
 	--texto-gral: 'Nunito', serif;
 }
 
+
+
 /* Home */
 
 .home {
   padding: 110px 0 100px 0;
   background: linear-gradient(180deg,  #ca121883, #ffffff, #c0f9f9);
-}
-
-.main-home {
-  height: calc(100vh - 110px);
-  width: 100%;
   display: flex;
-  /* flex-direction: column; */
 }
 
 /*title*/
 
 .title-home {
 	position: relative;
-	width: 40%;
+	width: 30%;
 	height: calc(100vh - 110px);
 }
 
 .title-home h2 {
   width: 440px;
   position: absolute;
-  top: 100px;
-  left: 100px;
+  top: 50px;
+  left: 25px;
 	font-size: 60px;
 	font-weight: 600;
-	color: #01002e;
+	color: #000;
 	font-family: var(--titulos);
 	letter-spacing: 3px;
 	transform: scaleY(1.4);
@@ -48,25 +44,22 @@
 
 #en {
 	position: absolute;
-  top: 185px;
-	left: 150px;
+  top: 140px;
+	left: 65px;
+  font-size: 50px;
 	margin: 0;
   transform: scaleY(1.4) scaleX(.9);
 }
 
-.br {
-	margin-left: 50px;
-}
-
 .title-home h1 {
 	position: absolute;
-	top: 222px;
-	left: 215px;
+	top: 165px;
+	left: 140px;
 	margin: 0;
 	font-family: var(--titulos);
 	background-color: var(--rosa-ewe);
 	color: var(--rojo-ewe);
-	font-size: 130px;
+	font-size: 100px;
 	letter-spacing: 1px;
 	font-weight: 500;
 	transform: scaleY(1.4) scaleX(.9);
@@ -78,21 +71,21 @@
 
 .p-div {
   position: relative;
-  width: 33.33%;
+  flex: 1;
 }
 
 .home h3 {
   position: absolute;
-  top: 310px;
-  left: -30px;
+  top: 200px;
+  left: -20px;
   color: #fff;
   font-family: var(--texto-gral);
   font-weight: 400;
   font-size: 17px;
   background-color: #061069de;
   padding: 30px;
-  height: 320px;
-  width: 320px;
+  height: 300px;
+  width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,25 +95,25 @@
 
 #img-1 {
   position: absolute;
-  top: 220px;
-  left: 207px;
-  height: 280px;
-  width: 280px;
+  top: 130px;
+  left: 210px;
+  height: 250px;
+  width: 250px;
 }
 
 #ico-1 {
   position: absolute;
-  top: 470px;
-  left: 330px;
+  top: 360px;
+  left: 320px;
   transform: rotate(25deg);
-  height: 165px;
+  height: 160px;
 }
 
 /*Form Home*/
 
 .form-main {
   position: relative;
-  width: 33.33%;
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,7 +198,7 @@
   display: flex;
   flex-direction: column;
   background: linear-gradient(180deg,  #5a9ff8, #bbf5ff);
-  padding: 0 0 100px 0;
+  padding: 0 0 150px 0;
 }
 
 .title-trabajo {
@@ -261,7 +254,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 110px;
+  gap: 6%;
   position: relative;
 }
 
@@ -389,8 +382,8 @@
 	border-radius: 10px;
   width: 465px;
   position: absolute;
-  left: 0;
   left: 73px;
+  top: 240px;
 }
 
 #con {
@@ -401,7 +394,7 @@
   font-weight: 500;
   transform: scaleY(1.5) scaleX(.6);
   position: absolute;
-  bottom: 353px;
+  top: 353px;
   left: 177px;
   margin: 0;
 }
@@ -435,17 +428,17 @@
 
 .porque-div {
   display: flex;
-  gap: 50px;
-  margin: 0 100px;
+  margin: 0 50px 0 0;
 }
 
 .porque-div div {
   background-image: url(../images/globo-der.png);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 530px;
+  width: 540px;
   height: 200px;
 }
 
@@ -566,7 +559,7 @@
 
 .cu-div {
   display: flex;
-  gap: 50px;
+  gap: 3%;
   margin: 80px 100px;
   width: 90%;
 }
@@ -612,6 +605,341 @@
 
 @media (max-width: 1440px) {
   .home {
-    background-color: black;
+    padding-bottom: 150px;
+  }
+  .home h3 {
+    top: 200px;
+  }
+
+  #img-1 {
+    top: 110px;
+  }
+
+  #ico-1 {
+    top: 360px;
+  }
+
+  .forma-main {
+    gap: 2%;
+  }
+
+  #title-blue {
+    left: 25px;
+  }
+
+  #con {
+    left: 129px;
+  }
+
+  .porque-title h1 {
+    left: 188px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .title-home h2 {
+    font-size: 50px;
+    top: 20px;
+    left: 20px;
+  }
+
+  #en {
+    font-size: 50px;
+    top: 95px;
+    left: 60px;
+  }
+
+  .title-home h1 {
+    font-size: 90px;
+    top: 120px;
+    left: 135px;
+  }
+
+  .home h3 {
+    top: 195px;
+    left: -45px;
+    height: 250px;
+    width: 250px;
+    font-size: 15px;
+  }
+
+  #img-1 {
+    left: 160px;
+    top: 140px;
+    height: 200px;
+    width: 200px;
+  }
+
+  #ico-1 {
+    height: 110px ;
+    left: 240px;
+    top: 350px;
+  }
+
+  .form-main {
+    width: 36%;
+  }
+
+  .form-home {
+    width: 300px;
+  }
+
+  .form-home form {
+    margin-bottom: 5px;
+  }
+
+  .form-home p {
+    font-size: 15px;
+    padding: 20px;
+  }
+
+  .forma-p {
+    width: 200px;
+    height: 200px;
+  }
+
+  .forma-p h3 {
+    font-size: 26px;
+  }
+
+  .forma-p p {
+    font-size: 15px;
+  }
+
+  #img-2,
+  #img-3,
+  #img-4 {
+    height: 150px;
+  }
+
+  #ico-2,
+  #ico-3,
+  #ico-4 {
+    height: 80px;
+  }
+
+  #ico-2 {
+    top: -20px;
+    left: -15px;
+  }
+  
+  #img-2 {
+    bottom: -75px;
+    left: -25px;
+  }
+  
+  #ico-3 {
+    bottom: -25px;
+    left: 10px;
+  }
+  
+  #img-3 {
+    bottom: -80px;
+    left: 170px;
+  }
+  
+  #ico-4 {
+    bottom: -25px;
+    right: -10px;
+  }
+  
+  #img-4 {
+    top: -80px;
+    right: -35px;
+  }
+
+  .porque-div {
+    margin: 0 20px 0 0;
+  }
+
+  .porque img {
+    height: 150px;
+  }
+
+  .porque-div div {
+    width: 390px;
+    height: 170px;
+    justify-content: flex-start;
+  }
+
+  .porque-div div h3 {
+    font-size: 26px;
+    margin: 10px;
+  }
+
+  .porque-div div p {
+    font-size: 15px;
+  }
+
+  #title-blue {
+    font-size: 50px;
+    width: 395px;
+  }
+
+  #con {
+    font-size: 40px;
+    top: 350px;
+    left: 110px;
+  }
+
+  .porque-title h1 {
+    font-size: 45px;
+    top: 365px;
+    left: 165px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .title-home {
+    width: 100%;
+    height: 250px;
+  }
+
+  .title-home h2 {
+    width: fit-content;
+  }
+
+  #en {
+    top: 85px;
+    left: 75px;
+  }
+
+  .title-home h1 {
+    top: 111px;
+    left: 125px;
+  }
+
+  .p-div {
+    width: 100%;
+    height: 340px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .p-div h3 {
+    position: static;
+    margin-left: 20px;
+    margin-top: 80px;
+    z-index: 2;
+  }
+
+  #img-1 {
+    top: 0;
+    left: 200px;
+  }
+
+  #ico-1 {
+    z-index: 3;
+    top: 240px;
+    left: 300px;
+    height: 90px;
+  }
+
+  .form-main {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .form-home {
+    position: static;
+    margin-top: 50px;
+  }
+
+  .forma-main {
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  #img-3 {
+    bottom: 200px;
+    left: 185px;
+  }
+
+  .forma-trabajo {
+    padding: 0 0 100px 0;
+  }
+
+  .porque {
+    flex-direction: column;
+  }
+
+  .porque-title {
+    width: 100%;
+  }
+
+  #title-blue {
+    position: static;
+    margin-top: 7 0px;
+  }
+  
+  #con {
+    top: 115px;
+    left: 107px;
+  }
+
+  .porque-title h1 {
+    top: 123px;
+    left: 155px;
+  }
+
+  .porque img {
+    height: 100px;
+  }
+
+  .porque-div {
+    margin: 0 15px 0 15px;
+  }
+
+  .porque-div div {
+    width: 300px;
+  }
+
+  .porque-div div h3 {
+    font-size: 23px;
+  }
+
+  .porque-div div p {
+    font-size: 13px;
+    margin: 0;
+    width: 70%;
+  }
+
+  .p-foot {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .como-unirte {
+    padding-bottom: 0;
+  }
+
+  .como-title {
+    margin: 50px 0;
+  }
+
+  .cu-div {
+    flex-wrap: wrap;
+    margin: 70px 0;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .cu-div div h3 {
+    font-size: 26px;
+  }
+
+  .cu-div div p {
+    font-size: 15px;
+    height: auto;
+  }
+
+  .cu-div div img {
+    padding: 0 0 15px 0;
   }
 }
