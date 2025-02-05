@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       { question: "¿Cuál es el plural de 'child'?", options: ['childs', 'children', 'childrens'], answer: 'children' },
       { question: 'Completa la pregunta: ____ your name?', options: ['What', "What's", 'Where'], answer: "What's" },
       { question: 'Traduce al inglés: ¿Cómo estás?', options: ['How are you?', 'How old are you?', 'Where are you?'], answer: 'How are you?' },
-      { question: 'Escribe la palabra que falta: I like to ____ pizza.', options: ['drink', 'play', 'do', 'eat'], answer: 'eat' },
+      { question: 'Escribe la palabra que falta: I like to ____ pizza.', options: ['drink', 'play', 'watch', 'eat'], answer: 'eat' },
       { question: 'Elige la opción que NO pertenece al grupo:', options: ['happy', 'sad', 'table'], answer: 'table' },
       { question: 'Elige la opción correcta: ____ a cat in the garden.', options: ['There is', 'There are', 'Is there'], answer: 'There is' },
       { question: 'Ordena las palabras para formar una frase: go / I / to / the supermarket / usually / on sunday.', options: ['I usually go to the supermarket on Sunday'], answer: 'I usually go to the supermarket on Sunday' },
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (currentQuestionIndex < currentSectionQuestions.length) {
       loadQuestion();
-    } else if (correctAnswers >= 9) {
+    } else if (correctAnswers >= 8) {
       switch (currentSection) {
         case 'A1':
           currentSection = 'A2';
