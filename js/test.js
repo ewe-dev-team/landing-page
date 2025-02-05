@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     formContainer.style.display = "none";
-    testContainer.style.display = "block";
+    testContainer.style.display = "flex";
     loadQuestion();
   });
 

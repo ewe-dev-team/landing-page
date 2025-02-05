@@ -11,133 +11,196 @@
 <body>
 
   <nav>
-    <img src="../assets/images/logo.png" alt="logo">
+    <img src="assets/images/logo-img.png" alt="logo">
+    <img src="assets/images/logo-letters.png" alt="">
     <ul>
       <li><a href="index.html">Inicio</a></li>
       <li><a href="views/cursos.html">Cursos</a></li>
       <li><a href="views/about-us.html">About us</a></li>
       <li><a href="views/contacto.html">Contacto</a></li>
       <li><a href="views/test-view.html">Test your English</a></li>
-      <li class="insc-btn"><a href="views/inscripcion.html">Inscribirme</a></li>
+      <a class="insc-btn" href="views/inscripcion.html">Inscribirme</a>
     </ul>
+    <button id="ham-btn"><img src="assets/images/ham-btn.png" alt="menu btn"></button>
+    <button id="close-btn" style="display: none;"><img src="assets/images/close-btn.png" alt="close menu btn"></button>
   </nav>
 
+  <section id="nav-menu" style="display: none;">
+    <div>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="views/cursos.html">Cursos</a></li>
+        <li><a href="views/about-us.html">About us</a></li>
+        <li><a href="views/contacto.html">Contacto</a></li>
+        <li><a href="views/test-view.html">Test your English</a></li>
+        <a class="insc-btn" href="views/inscripcion.html">Inscribirme</a>
+      </ul>
+    </div>
+  </section>
+
   <section class="home">
-    <div class="pres">
-      <h3>Con nuestro curso de inglés 100% online, aprenderás de manera efectiva y dominarás el idioma paso a paso, sin importar si estás comenzando o ya tienes experiencia. Tenemos el curso ideal para ti.</h3>
-    </div>
-    <div class="form-section">
-      <div>
-        <p>Regístrate ahora para recibir más información sobre el curso y conocer todos los detalles de los costos.</p>
-      <form action="">
-        <input id="name" type="text" placeholder="Nombre">
-        <input id="age" type="number" placeholder="Edad">
-        <input id="email" type="email" placeholder="Correo">
-        <input id="tel" type="tel" placeholder="Teléfono">
-        <button>Enviar</button>
-      </form>
+      <div class="title-home">
+        <h2>CURSOS DE INGLÉS</h2>
+        <h2 id="en">EN</h2>
+        <h1>LÍNEA</h1>
       </div>
-    </div>
+      <div class="p-div">
+        <img id="img-1" src="assets/images/ewe4.png" alt="ilustración">
+        <h3>Con nuestro curso de inglés 100% online, aprenderás de manera efectiva y dominarás el idioma paso a paso, sin importar si estás comenzando o ya tienes experiencia. Tenemos el curso ideal para ti.</h3>
+        <img id="ico-1" src="assets/images/flag.png" alt="icon">
+      </div>
+      <div class="form-main">
+        <div class="form-home">
+          <p>Regístrate ahora para recibir más información sobre el curso y conocer todos los detalles de los costos.</p>
+          <form action="">
+            <input id="name" type="text" placeholder="Nombre" required>
+            <input id="email" type="email" placeholder="Correo" required>
+            <input id="tel" type="tel" placeholder="Teléfono" required>
+            <input id="age" type="number" min="15" placeholder="Edad" required>
+            <button>ENVIAR</button>
+          </form>
+        </div>
+      </div>
   </section>
 
   <section class="forma-trabajo">
-    <h2>Nuestra forma de trabajo</h2>
-    <div class="forma-div">
-      <img src="assets/images/sesiones-en-vivo.png" alt="sesiones en vivo">
-      <div>
-        <h3 class="subtitle">Aprende con ayuda</h3>
-        <h3 class="title">Sesiones en Vivo</h3>
-        <p>No te limites a libros, practica conversación, aclara dudas  y participa en actividades grupales para fortalecer tus habilidades. Sesiones dinámicas y enfocadas en conversación, gramática y vocabulario.</p>
+    <div class="title-trabajo">
+      <h2 id="title-rosa">NUESTRA FORMA</h2>
+      <h2 id="de">de</h2>
+      <h1>TRABAJO</h1>
+    </div>
+    <div class="forma-main">
+      <div class="forma-div">
+        <div class="forma-p">
+          <h3 class="title">Sesiones en Vivo</h3>
+          <p>No te limites a libros, practica conversación, aclara dudas y participa en actividades grupales para fortalecer tus habilidades. Sesiones dinámicas y enfocadas en conversación, gramática y vocabulario.</p>
+        </div>
+        <img id="ico-2" src="assets/images/live.png" alt="icono">
+        <img id="img-2" src="assets/images/ewe1.png" alt="imagen">
+      </div>
+      <div class="forma-div">
+        <div class="forma-p">
+          <h3 class="title">Evaluaciones Periódicas</h3>
+          <p>Realiza evaluaciones regulares para medir tu avance, identificar áreas de mejora y asegurarte de alcanzar tus metas de aprendizaje.</p>
+        </div>
+        <img id="ico-3" src="assets/images/exam.png" alt="icono">
+        <img id="img-3" src="assets/images/ewe3.png" alt="imagen">
+      </div>
+      <div class="forma-div">
+        <div class="forma-p">
+          <h3 class="title">Práctica Adicional</h3>
+          <p>No te limites a libros, practica conversación, aclara dudas y participa en actividades grupales para fortalecer tus habilidades. Sesiones dinámicas y enfocadas en conversación, gramática y vocabulario.</p>
+        </div>
+        <img id="ico-4" src="assets/images/work-ic.PNG" alt="icono">
+        <img id="img-4" src="assets/images/ewe2.png" alt="imagen">
       </div>
     </div>
-    <div class="forma-div" id="forma-2nd">
-      <img src="assets/images/practica-adicional.png" alt="Practica Adicional">
-      <div>
-        <h3 class="subtitle">Aprende con confianza</h3>
-        <h3 class="title">Práctica Adicional</h3>
-        <p>Complementa tus sesiones con materiales y recursos en plataforma para que puedas practicar a tu ritmo y consolidar lo aprendido.</p>
-      </div>
-    </div>
-    <div class="forma-div">
-      <img src="assets/images/evaluaciones-periodicas.png" alt="Evaluciones Periódicas">
-      <div>
-        <h3 class="subtitle">Monitorea tu progreso</h3>
-        <h3 class="title">Evaluaciones Periódicas</h3>
-        <p>Realiza evaluaciones regulares para medir tu avance, identificar áreas de mejora y asegurarte de alcanzar tus metas de aprendizaje.</p>
-      </div>
   </section>
 
   <section class="porque">
-    <h2>¿Por qué aprender con English with Ease?</h2>
-    <div class="porque-div">
-      <img src="assets/images/contenido-nivel.png" alt="Contenido a tu nivel">
-      <div>
-        <h3 class="title">Contenido a tu nivel</h3>
-        <p>Contenidos estructurados por nivel, desde principiante hasta intermedio avanzado.</p>
-      </div>
+    <div class="porque-title">
+      <h2 id="title-blue">¿POR QUÉ APRENDER</h2>
+      <h2 id="con">con</h2>
+      <h1>EWE?</h1>
     </div>
-    <div class="porque-div" id="forma-2nd">
-      <img src="assets/images/objetivos-claros.png" alt="Objetivos claros">
-      <div>
-        <h3 class="title">Objetivos claros</h3>
-        <p>Progresión gradual para que avances de forma segura y efectiva.</p>
+    <div class="porque-main">
+      <div class="porque-div">
+        <img src="assets/images/pc.PNG" alt="Herramienta interactiva">
+        <div>
+          <h3 class="title">Herramienta interactiva</h3>
+          <p>Acceso a recursos interactivos que hacen el aprendizaje más atractivo y accesible.</p>
+        </div>
       </div>
-    </div>
-    <div class="porque-div">
-      <img src="assets/images/herraminetas-inter.png" alt="Herramienta interactiva">
-      <div>
-        <h3 class="title">Herramienta interactiva</h3>
-        <p>Acceso a recursos interactivos que hacen el aprendizaje más atractivo y accesible.</p>
+      <div class="porque-div">
+        <img src="assets/images/niveles.PNG" alt="Contenido a tu nivel">
+        <div>
+          <h3 class="title">Contenido a tu nivel</h3>
+          <p>Contenidos estructurados por nivel, desde principiante hasta intermedio avanzado.</p>
+        </div>
       </div>
+      <div class="porque-div" id="forma-2nd">
+        <img src="assets/images/montaña.PNG" alt="Objetivos claros">
+        <div>
+          <h3 class="title">Objetivos claros</h3>
+          <p>Progresión gradual para que avances de forma segura y efectiva.</p>
+        </div>
+      </div>
+      
     </div>
-    <p class="p-foot">¡Aprende inglés de forma práctica, desde donde estés, y alcanza el siguiente nivel!</p>
   </section>
+
+  <p class="p-foot">¡Aprende inglés de forma práctica, desde donde estés, y alcanza el siguiente nivel!</p>
 
   <section class="como-unirte">
-    <h2>¿Cómo unirte a English with Ease?</h2>
+    <div class="como-title">
+      <h2 id="title-red">¿CÓMO UNIRTE</h2>
+      <h2 id="a">A</h2>
+      <h1>EWE?</h1>
+    </div>
     <div class="cu-div">
       <div>
-        <img src="assets/images/llena-datos.webp" alt="Llena tus datos">
         <h3 class="title">Llena tus datos</h3>
         <p>Proporciona tus datos personales con los que podremos identificarte</p>
+        <img src="assets/images/mac.PNG" alt="Llena tus datos">
       </div>
       <div>
-        <img src="assets/images/descubre-nivel.webp" alt="Realiza el test">
         <h3 class="title">Realiza tu test</h3>
         <p>Realiza nuestro test de nivel y descubre en qué nivel te encuentras</p>
+        <img src="assets/images/work.PNG" alt="Realiza el test">
       </div>
       <div>
-        <img src="assets/images/realiza-pago.webp" alt="Realiza tu pago">
         <h3 class="title">Finaliza tu pago</h3>
         <p>Realiza el pago de tu mensualidad de manera segura y rápida</p>
+        <img src="assets/images/pay.PNG" alt="Realiza tu pago">
       </div>
       <div>
-        <img src="assets/images/com-curso.jpg" alt="Comienza tu curso">
         <h3 class="title">Comienza tu curso</h3>
         <p>Comienza tu curso de inglés y aprende de manera rápida y sencilla</p>
+        <img src="assets/images/happy.PNG" alt="Comienza tu curso">
       </div>
     </div>
   </section>
 
-  <footer>
+  <footer id="footer-desk">
     <div>
-      <p>¿Tienes preguntas?</p>
-      <a href="mailto:contacto@eweacademy.com" target="_blank">Contáctanos</a>
-      <p>¿Listo para dominar el inglés?</p>
-      <a href="">Inscríbete</a>
+      <p>¿Tienes preguntas? <br> <a href="mailto:contacto@eweacademy.com" target="_blank">Contáctanos</a></p>
+      <p>¿Listo para dominar el inglés? <br> <a href="views/inscripcion.html">Inscríbete</a></p>
+      <p>© 2025 English with Ease. <br>Todos los derechos reservados.</p>
     </div>
-    <div>
-      <a href="mailto:contacto@eweacademy.com" target="_blank">contacto@eweacademy.com</a>
-      <a href="https://wa.me/525543826531?text=Hola,%20quiero%20más%20información%20sobre%20los%20cursos%20de%20inglés." target="_blank">+52 55 4382 6531</a>
-      <a href="https://www.facebook.com/EngwithEase" target="_blank">
-        <img src="assets/images/facebook.png" alt="Facebook Logo">
-      </a>
-      <p>© 2025 English with Ease.<br> Todos los derechos reservados.</p>
-    </div>
+    <a href="https://www.facebook.com/EngwithEase" target="_blank">
+      <img src="assets/images/facebook.png" alt="Facebook link">
+    </a>
+    <a href="mailto:contacto@eweacademy.com" target="_blank">
+      <img src="assets/images/gmail.png" alt="mail to">
+    </a>
+    <a href="https://wa.me/525543826531?text=Hola,%20quiero%20más%20información%20sobre%20los%20cursos%20de%20inglés." target="_blank">
+      <img src="assets/images/whatsapp.png" alt="whatsapp link">
+    </a>
   </footer>
+
+  <footer id="footer-mob">
+    <div>
+      <p>¿Tienes preguntas? <br> <a href="mailto:contacto@eweacademy.com" target="_blank">Contáctanos</a></p>
+      <p>¿Listo para dominar el inglés? <br> <a href="views/inscripcion.html">Inscríbete</a></p>
+      <p>© 2025 English with Ease. <br>Todos los derechos reservados.</p>
+      <div>
+        <a href="https://www.facebook.com/EngwithEase" target="_blank">
+          <img src="assets/images/facebook.png" alt="Facebook link">
+        </a>
+        <a href="mailto:contacto@eweacademy.com" target="_blank">
+          <img src="assets/images/gmail.png" alt="mail to">
+        </a>
+        <a href="https://wa.me/525543826531?text=Hola,%20quiero%20más%20información%20sobre%20los%20cursos%20de%20inglés." target="_blank">
+          <img src="assets/images/whatsapp.png" alt="whatsapp link">
+        </a>
+      </div>
+    </div>
+    
+  </footer>
+
   <div class="sub-footer">
     <p>Este sitio fue diseñado por Dev 4 All. ¿Te gustaría uno igual? Descubre más aquí.</p>
   </div>
-
+  <script src="js/nav-foot.js"></script>
 </body>
 </html>
