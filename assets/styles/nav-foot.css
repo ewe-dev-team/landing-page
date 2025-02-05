@@ -9,7 +9,8 @@
   --texto-gral: 'Nunito', serif;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -26,8 +27,8 @@ nav {
   display: flex;
   align-items: center;
   background: var(--azul-ewe);
-  font-family: 'bebas neue';
-  color: #000000;
+  font-family: var(--subtitulos);
+  color: #000;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -45,11 +46,16 @@ nav img {
   padding: 15px;
 }
 
+footer img {
+  height: 35px;
+  padding: 0 5px;
+}
+
 nav img:nth-child(2) {
   margin: 0;
   padding: 0;
 }
-  
+
 nav ul {
   display: flex;
   align-items: center;
@@ -59,10 +65,19 @@ nav ul {
   margin-right: 50px;
 }
 
+footer div a {
+  color: #fff;
+  font-family: var(--texto-gral);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 nav ul li a {
   font-size: 20px;
   text-decoration: none;
-  color: #000000;
+  color: #000;
   letter-spacing: 2px;
 }
 
@@ -72,7 +87,7 @@ nav ul li:hover {
 }
 
 .insc-btn {
-  color: #ffffff;
+  color: #fff;
   font-size: 20px;
   text-decoration: none;
   font-family: var(--subtitulos);
@@ -120,22 +135,8 @@ footer div p {
   align-items: center;
 }
 
-footer div a {
-  color: #ffffff;
-  font-family: var(--texto-gral);
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
 footer div a:hover {
   transform: scale(1.08);
-}
-
-footer img {
-  height: 35px;
-  padding: 0 5px;
 }
 
 footer img:hover {
@@ -145,8 +146,8 @@ footer img:hover {
 .sub-footer {
   font-size: 12px;
   font-family: var(--texto-gral);
-  background-color: #183C4B;
-  color: #ffffff;
+  background-color: #183c4b;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,7 +213,7 @@ footer img:hover {
   .nav-menu {
     display: none;
   }
-  
+
   #nav-menu {
     border-top: 1px solid #a1a1a1;
     margin-top: 110px;

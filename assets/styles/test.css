@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width:650px;
+  width: 650px;
   font-family: var(--texto-gral);
   color: #061069;
   font-size: 17px;
@@ -91,7 +91,7 @@ button:hover {
   transform: scale(1.025);
 }
 
-/*Test questions*/
+/* Test questions */
 
 #test-container {
   align-self: center;
@@ -113,7 +113,6 @@ button:hover {
 }
 
 #options input[type="radio"] {
-  accent-color: var(--rosa-ewe);
   width: 20px;
   height: 20px;
 }

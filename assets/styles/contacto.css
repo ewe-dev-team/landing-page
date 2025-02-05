@@ -56,7 +56,7 @@
 }
 
 .links a:hover {
-  transform: scale(1.025)
+  transform: scale(1.025);
 }
 
 .links a img {

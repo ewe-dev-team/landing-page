@@ -1,30 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-	--rosa-ewe: #fdaff2;
-	--azul-ewe: #c0f9f9;
-	--rojo-ewe: #ca1217;
-	--titulos: 'Barlow Condensed', serif;
-	--subtitulos: 'Bebas Neue', serif;
-	--texto-gral: 'Nunito', serif;
+  --rosa-ewe: #fdaff2;
+  --azul-ewe: #c0f9f9;
+  --rojo-ewe: #ca1217;
+  --titulos: 'Barlow Condensed', serif;
+  --subtitulos: 'Bebas Neue', serif;
+  --texto-gral: 'Nunito', serif;
 }
-
-
 
 /* Home */
 
 .home {
   padding: 110px 0 100px 0;
-  background: linear-gradient(180deg,  #ca121883, #ffffff, #c0f9f9);
+  background: linear-gradient(180deg, #ca121883, #fff, #c0f9f9);
   display: flex;
 }
 
-/*title*/
+/* title */
 
 .title-home {
-	position: relative;
-	width: 30%;
-	height: calc(100vh - 110px);
+  position: relative;
+  width: 30%;
+  height: calc(100vh - 110px);
 }
 
 .title-home h2 {
@@ -32,39 +30,38 @@
   position: absolute;
   top: 50px;
   left: 25px;
-	font-size: 60px;
-	font-weight: 600;
-	color: #000;
-	font-family: var(--titulos);
-	letter-spacing: 3px;
-	transform: scaleY(1.4);
+  font-size: 60px;
+  font-weight: 600;
+  color: #000;
+  font-family: var(--titulos);
+  letter-spacing: 3px;
   margin: 0;
-  transform: scaleY(1.4) scaleX(.9);
+  transform: scaleY(1.4) scaleX(0.9);
 }
 
 #en {
-	position: absolute;
+  position: absolute;
   top: 140px;
-	left: 65px;
+  left: 65px;
   font-size: 50px;
-	margin: 0;
-  transform: scaleY(1.4) scaleX(.9);
+  margin: 0;
+  transform: scaleY(1.4) scaleX(0.9);
 }
 
 .title-home h1 {
-	position: absolute;
-	top: 165px;
-	left: 140px;
-	margin: 0;
-	font-family: var(--titulos);
-	background-color: var(--rosa-ewe);
-	color: var(--rojo-ewe);
-	font-size: 100px;
-	letter-spacing: 1px;
-	font-weight: 500;
-	transform: scaleY(1.4) scaleX(.9);
-	line-height: 95%;
-	border-radius: 10px;
+  position: absolute;
+  top: 165px;
+  left: 140px;
+  margin: 0;
+  font-family: var(--titulos);
+  background-color: var(--rosa-ewe);
+  color: var(--rojo-ewe);
+  font-size: 100px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transform: scaleY(1.4) scaleX(0.9);
+  line-height: 95%;
+  border-radius: 10px;
 }
 
 /* Home */
@@ -109,7 +106,7 @@
   height: 160px;
 }
 
-/*Form Home*/
+/* Form Home */
 
 .form-main {
   position: relative;
@@ -197,53 +194,50 @@
 .forma-trabajo {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg,  #5a9ff8, #bbf5ff);
+  background: linear-gradient(180deg, #5a9ff8, #bbf5ff);
   padding: 0 0 150px 0;
 }
 
 .title-trabajo {
   position: relative;
   align-self: center;
-  margin: 100px 0;  
+  margin: 100px 0;
 }
 
 #title-rosa {
   font-size: 60px;
-  font-weight: 600;
   color: #061069;
   margin: 0;
-	font-family: var(--titulos);
-	background-color: var(--rosa-ewe);
-	letter-spacing: 1px;
-	font-weight: 500;
-	transform: scaleY(1.4) scaleX(.9);
-	line-height: 95%;
-	border-radius: 10px;
+  font-family: var(--titulos);
+  background-color: var(--rosa-ewe);
+  letter-spacing: 1px;
+  font-weight: 500;
+  transform: scaleY(1.4) scaleX(0.9);
+  line-height: 95%;
+  border-radius: 10px;
 }
 
 #de {
   font-size: 45px;
-  font-weight: 600;
   color: #000;
   margin: 5px 0 0 55px;
-	font-family: var(--titulos);
-	letter-spacing: 1px;
-	font-weight: 500;
-	transform: scaleY(1.5) scaleX(.8);
+  font-family: var(--titulos);
+  letter-spacing: 1px;
+  font-weight: 500;
+  transform: scaleY(1.5) scaleX(0.8);
 }
 
 .title-trabajo h1 {
   font-size: 60px;
-  font-weight: 600;
   color: #fff;
   margin: 0;
-	font-family: var(--titulos);
-	background-color: var(--rojo-ewe);
-	letter-spacing: 1px;
-	font-weight: 500;
-	transform: scaleY(1.4) scaleX(.9);
-	line-height: 100%;
-	border-radius: 10px;
+  font-family: var(--titulos);
+  background-color: var(--rojo-ewe);
+  letter-spacing: 1px;
+  font-weight: 500;
+  transform: scaleY(1.4) scaleX(0.9);
+  line-height: 100%;
+  border-radius: 10px;
   width: min-content;
   position: absolute;
   top: 76px;
@@ -358,7 +352,7 @@
 .porque {
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(180deg, #ff99aa, #ff99e2, #f8daef);
+  background: linear-gradient(180deg, #f9a, #ff99e2, #f8daef);
 }
 
 .porque-title {
@@ -371,15 +365,14 @@
 
 #title-blue {
   font-size: 60px;
-  font-weight: 600;
   color: #fff;
-	font-family: var(--titulos);
-	background-color: #061069;
-	letter-spacing: 2px;
-	font-weight: 500;
-	transform: scaleY(1.4) scaleX(.9);
-	line-height: 125%;
-	border-radius: 10px;
+  font-family: var(--titulos);
+  background-color: #061069;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transform: scaleY(1.4) scaleX(0.9);
+  line-height: 125%;
+  border-radius: 10px;
   width: 465px;
   position: absolute;
   left: 73px;
@@ -392,7 +385,7 @@
   font-family: var(--titulos);
   letter-spacing: 1px;
   font-weight: 500;
-  transform: scaleY(1.5) scaleX(.6);
+  transform: scaleY(1.5) scaleX(0.6);
   position: absolute;
   top: 353px;
   left: 177px;
@@ -401,14 +394,13 @@
 
 .porque-title h1 {
   font-size: 53px;
-  font-weight: 600;
   color: var(--rojo-ewe);
   margin: 0;
   font-family: var(--titulos);
   background-color: #c0f9f9de;
   letter-spacing: 1px;
   font-weight: 500;
-  transform: scaleY(1.5) scaleX(.9);
+  transform: scaleY(1.5) scaleX(0.9);
   line-height: 95%;
   border-radius: 10px;
   width: min-content;
@@ -442,6 +434,20 @@
   height: 200px;
 }
 
+.cu-div h3 {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: var(--subtitulos);
+  color: #061069;
+  background-color: var(--azul-ewe);
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 30px 10px 10px 10px;
+  padding: 2px;
+  border-radius: 5px;
+  line-height: 90%;
+}
+
 .porque-div div h3 {
   font-size: 30px;
   font-weight: 500;
@@ -465,6 +471,14 @@
   font-weight: 700;
 }
 
+.cu-div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--rosa-ewe);
+  border-radius: 20px;
+}
+
 .porque-div:nth-child(2) div {
   background-image: url(../images/globo-izq.png);
 }
@@ -477,24 +491,22 @@
   height: 170px;
 }
 
-
 .p-foot {
   background-color: var(--azul-ewe);
   margin: 0;
   font-family: var(--subtitulos);
-  font-weight: 900px;
+  font-weight: 900;
   color: var(--rojo-ewe);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80px;
-  font-size:30px;
+  font-size: 30px;
 }
-
 
 /* Como Unirte */
 
-.como-unirte{
+.como-unirte {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -508,31 +520,29 @@
 .como-title {
   position: relative;
   align-self: center;
-  margin: 100px 0;  
+  margin: 100px 0;
 }
 
 #title-red {
   font-size: 60px;
-  font-weight: 600;
   color: var(--rosa-ewe);
   margin: 0;
-	font-family: var(--titulos);
-	background-color: var(--rojo-ewe);
-	letter-spacing: 1px;
-	font-weight: 500;
-	transform: scaleY(1.4) scaleX(.9);
-	line-height: 110%;
-	border-radius: 10px;
+  font-family: var(--titulos);
+  background-color: var(--rojo-ewe);
+  letter-spacing: 1px;
+  font-weight: 500;
+  transform: scaleY(1.4) scaleX(0.9);
+  line-height: 110%;
+  border-radius: 10px;
 }
 
 #a {
   font-size: 45px;
-  font-weight: 600;
   color: #000;
-	font-family: var(--titulos);
-	letter-spacing: 1px;
-	font-weight: 500;
-	transform: scaleY(1.5) scaleX(.8);
+  font-family: var(--titulos);
+  letter-spacing: 1px;
+  font-weight: 500;
+  transform: scaleY(1.5) scaleX(0.8);
   margin: 0;
   position: absolute;
   top: 84px;
@@ -541,20 +551,19 @@
 
 .como-title h1 {
   font-size: 60px;
-  font-weight: 600;
   color: var(--azul-ewe);
-  margin: 0;
-	font-family: var(--titulos);
-	background-color: #061069de;
-	letter-spacing: 1px;
-	font-weight: 500;
-	transform: scaleY(1.4) scaleX(.9);
-	line-height: 100%;
-	border-radius: 10px;
+  font-family: var(--titulos);
+  background-color: #061069de;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transform: scaleY(1.4) scaleX(0.9);
+  line-height: 100%;
+  border-radius: 10px;
   width: min-content;
   position: absolute;
   top: 85px;
   left: 135px;
+  margin: 0;
 }
 
 .cu-div {
@@ -564,33 +573,9 @@
   width: 90%;
 }
 
-.cu-div h3 {
-  margin-top: 20px;
-  font-size: 30px;
-  font-weight: 500;
-  font-family: var(--subtitulos);
-  color: #061069;
-  background-color: var(--azul-ewe);
-  letter-spacing: 1px;
-  text-align: center;
-  margin: 30px 10px 10px 10px;
-  padding: 2px;
-  border-radius: 5px;
-  line-height: 90%;
-}
-
-.cu-div div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--rosa-ewe);
-  border-radius: 20px;
-}
-
 .como-unirte div p {
   text-align: center;
   width: 60%;
-  text-align: center;
   font-family: var(--texto-gral);
   color: #061069;
   font-size: 17px;
@@ -607,6 +592,7 @@
   .home {
     padding-bottom: 150px;
   }
+
   .home h3 {
     top: 200px;
   }
@@ -671,7 +657,7 @@
   }
 
   #ico-1 {
-    height: 110px ;
+    height: 110px;
     left: 240px;
     top: 350px;
   }
@@ -722,27 +708,27 @@
     top: -20px;
     left: -15px;
   }
-  
+
   #img-2 {
     bottom: -75px;
     left: -25px;
   }
-  
+
   #ico-3 {
     bottom: -25px;
     left: 10px;
   }
-  
+
   #img-3 {
     bottom: -80px;
     left: 170px;
   }
-  
+
   #ico-4 {
     bottom: -25px;
     right: -10px;
   }
-  
+
   #img-4 {
     top: -80px;
     right: -35px;
@@ -874,9 +860,9 @@
 
   #title-blue {
     position: static;
-    margin-top: 7 0px;
+    margin-top: 70px;
   }
-  
+
   #con {
     top: 115px;
     left: 107px;
