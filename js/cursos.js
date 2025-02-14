@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
       `;
 
+      infoContainer.style.display = 'flex';
       infoContainer.innerHTML = infoHtml;
       infoContainer.scrollIntoView({ behavior: 'smooth' });
     });
@@ -78,6 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('click', (event) => {
     if (!infoContainer.contains(event.target)) {
       infoContainer.innerHTML = '';
+      infoContainer.style.display = 'none';
     }
   });
 });
@@ -115,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
     `;
+    convContainer.style.display = 'flex';
     convContainer.innerHTML = convHtml;
     convContainer.scrollIntoView({ behavior: 'smooth' });
   });
@@ -122,6 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('click', (event) => {
     if (!convContainer.contains(event.target)) {
       convContainer.innerHTML = '';
+      convContainer.style.display = 'none';
     }
   });
 });

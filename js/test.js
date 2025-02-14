@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <input type="radio" name="answer" value="${option}" />
         ${option}
       `;
-      label.style.display = 'block';
+      label.style.display = 'flex';
       optionsElement.appendChild(label);
     });
 

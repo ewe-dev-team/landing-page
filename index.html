@@ -10,9 +10,22 @@
 </head>
 <body>
 
-  <nav>
-    <img src="assets/images/logo-img.png" alt="logo">
-    <img src="assets/images/logo-letters.png" alt="">
+  <nav id="navbar">
+    <a href="index.html"><img class="logo-ewe" src="assets/images/logo-img.png" alt="logo"></a>
+    <a href="index.html"><img class="logo-ewe" src="assets/images/logo-letters.png" alt="logo"></a>
+    <ul id="nav-desktop">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="views/cursos.html">Cursos</a></li>
+      <li><a href="views/about-us.html">About us</a></li>
+      <li><a href="views/contacto.html">Contacto</a></li>
+      <li><a href="views/test-view.html">Test your English</a></li>
+      <a class="insc-btn" href="views/inscripcion.html">Inscribirme</a>
+    </ul>
+    <button id="ham-btn" type="button"><img src="assets/images/ham-btn.png" alt="menu btn"></button>
+    <button id="close-btn" type="button"><img src="assets/images/close-btn.png" alt="close menu btn"></button>
+  </nav>
+
+  <section id="nav-menu" style="display: none;">
     <ul>
       <li><a href="index.html">Inicio</a></li>
       <li><a href="views/cursos.html">Cursos</a></li>
@@ -21,29 +34,16 @@
       <li><a href="views/test-view.html">Test your English</a></li>
       <a class="insc-btn" href="views/inscripcion.html">Inscribirme</a>
     </ul>
-    <button type="button" id="ham-btn"><img src="assets/images/ham-btn.png" alt="menu btn"></button>
-    <button type="button" id="close-btn" style="display: none;"><img src="assets/images/close-btn.png" alt="close menu btn"></button>
-  </nav>
-
-  <section id="nav-menu" style="display: none;">
-    <div>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="views/cursos.html">Cursos</a></li>
-        <li><a href="views/about-us.html">About us</a></li>
-        <li><a href="views/contacto.html">Contacto</a></li>
-        <li><a href="views/test-view.html">Test your English</a></li>
-        <a class="insc-btn" href="views/inscripcion.html">Inscribirme</a>
-      </ul>
-    </div>
   </section>
 
-  <section class="home">
-      <div class="title-home">
+  <section class="inicio-sections" id="inicio-main">
+
+      <div class="title" id="title-home">
         <h2>CURSOS DE INGLÉS</h2>
-        <h2 id="en">EN</h2>
+        <h3 id="en">EN</h3>
         <h1>LÍNEA</h1>
       </div>
+
       <div class="home-main">
         <div class="p-div">
           <img id="img-1" src="assets/images/ewe4.png" alt="ilustración">
@@ -54,138 +54,131 @@
       <div class="form-main">
         <div class="form-home">
           <p>Regístrate ahora para recibir más información sobre el curso y conocer todos los detalles de los costos.</p>
-          <form action="">
+          <form class="form" action="">
             <input id="name" type="text" placeholder="Nombre" required>
             <input id="email" type="email" placeholder="Correo" required>
             <input id="tel" type="tel" placeholder="Teléfono" required>
-            <input id="age" type="number" min="15" placeholder="Edad" required>
-            <button>ENVIAR</button>
+            <input id="birthdate" type="date" name="birthdate" required>
+            <button class="pink-btn form-btn">ENVIAR</button>
           </form>
         </div>
       </div>
+
   </section>
 
-  <section class="forma-trabajo">
-    <div class="title-trabajo">
+  <section class="inicio-sections" id="forma-trabajo">
+
+    <div class="title" id="title-trabajo">
       <h2 id="title-rosa">NUESTRA FORMA</h2>
-      <h2 id="de">de</h2>
+      <h3 id="de">de</h3>
       <h1>TRABAJO</h1>
     </div>
+
     <div class="forma-main">
       <div class="forma-div">
-        <div class="forma-p">
-          <h3 class="title">Sesiones en Vivo</h3>
+        <div class="forma-circle" id="forma-1st">
+          <h3 >Sesiones en Vivo</h3>
           <p>No te limites a libros, practica conversación, aclara dudas y participa en actividades grupales para fortalecer tus habilidades. Sesiones dinámicas y enfocadas en conversación, gramática y vocabulario.</p>
         </div>
-        <img id="ico-2" src="assets/images/live.png" alt="icono">
-        <img id="img-2" src="assets/images/ewe1.png" alt="imagen">
+        <img  class="icono-home" id="ico-2" src="assets/images/live.png" alt="icono">
+        <img class="img-home" id="img-2" src="assets/images/ewe1.png" alt="imagen">
       </div>
       <div class="forma-div">
-        <div class="forma-p">
-          <h3 class="title">Evaluaciones Periódicas</h3>
+        <div class="forma-circle" id="forma-2nd">
+          <h3>Evaluaciones Periódicas</h3>
           <p>Realiza evaluaciones regulares para medir tu avance, identificar áreas de mejora y asegurarte de alcanzar tus metas de aprendizaje.</p>
         </div>
-        <img id="ico-3" src="assets/images/exam.png" alt="icono">
-        <img id="img-3" src="assets/images/ewe3.png" alt="imagen">
+        <img class="icono-home" id="ico-3" src="assets/images/exam.png" alt="icono">
+        <img class="img-home" id="img-3" src="assets/images/ewe3.png" alt="imagen">
       </div>
       <div class="forma-div">
-        <div class="forma-p">
-          <h3 class="title">Práctica Adicional</h3>
+        <div class="forma-circle" id="forma-3rd">
+          <h3>Práctica Adicional</h3>
           <p>Complementa tus sesiones con materiales y recursos en plataforma para que puedas practicar a tu ritmo y consolidar lo aprendido.</p>
         </div>
-        <img id="ico-4" src="assets/images/work-ic.png" alt="icono">
-        <img id="img-4" src="assets/images/ewe2.png" alt="imagen">
+        <img class="icono-home" id="ico-4" src="assets/images/work-ic.png" alt="icono">
+        <img class="img-home" id="img-4" src="assets/images/ewe2.png" alt="imagen">
       </div>
     </div>
+
   </section>
 
-  <section class="porque">
-    <div class="porque-title">
+  <section class="inicio-sections" id="porque">
+
+    <div class="title" id="porque-title">
       <h2 id="title-blue">¿POR QUÉ APRENDER</h2>
       <h2 id="con">con</h2>
-      <h1>EWE?</h1>
+      <h1>EwE?</h1>
     </div>
+
     <div class="porque-main">
       <div class="porque-div">
         <img src="assets/images/pc.png" alt="Herramienta interactiva">
-        <div>
-          <h3 class="title">Herramienta interactiva</h3>
+        <div class="porque-globo">
+          <h3 class="title-rojo">Herramienta interactiva</h3>
           <p>Acceso a recursos interactivos que hacen el aprendizaje más atractivo y accesible.</p>
         </div>
       </div>
       <div class="porque-div">
         <img src="assets/images/niveles.png" alt="Contenido a tu nivel">
-        <div>
-          <h3 class="title">Contenido a tu nivel</h3>
+        <div class="porque-globo">
+          <h3 class="title-rojo">Contenido a tu nivel</h3>
           <p>Contenidos estructurados por nivel, desde principiante hasta intermedio avanzado.</p>
         </div>
       </div>
-      <div class="porque-div" id="forma-2nd">
+      <div class="porque-div">
         <img src="assets/images/montaña.png" alt="Objetivos claros">
-        <div>
-          <h3 class="title">Objetivos claros</h3>
+        <div class="porque-globo">
+          <h3 class="title-rojo">Objetivos claros</h3>
           <p>Progresión gradual para que avances de forma segura y efectiva.</p>
         </div>
       </div>
-      
     </div>
+
   </section>
 
   <p class="p-foot">¡Aprende inglés de forma práctica, desde donde estés, y alcanza el siguiente nivel!</p>
 
-  <section class="como-unirte">
-    <div class="como-title">
+  <section class="inicio-sections" id="como">
+
+    <div class="title" id="como-title">
       <h2 id="title-red">¿CÓMO UNIRTE</h2>
       <h2 id="a">A</h2>
-      <h1>EWE?</h1>
+      <h1>EwE?</h1>
     </div>
+
     <div class="cu-div">
-      <div>
-        <h3 class="title">Llena tus datos</h3>
+      <div class="cu-card">
+        <h3>Llena tus datos</h3>
         <p>Proporciona tus datos personales con los que podremos identificarte</p>
         <img src="assets/images/mac.png" alt="Llena tus datos">
       </div>
-      <div>
-        <h3 class="title">Realiza tu test</h3>
+      <div class="cu-card">
+        <h3>Realiza tu test</h3>
         <p>Realiza nuestro test de nivel y descubre en qué nivel te encuentras</p>
         <img src="assets/images/work.png" alt="Realiza el test">
       </div>
-      <div>
-        <h3 class="title">Finaliza tu pago</h3>
+      <div class="cu-card">
+        <h3>Finaliza tu pago</h3>
         <p>Realiza el pago de tu mensualidad de manera segura y rápida</p>
         <img src="assets/images/pay.png" alt="Realiza tu pago">
       </div>
-      <div>
-        <h3 class="title">Comienza tu curso</h3>
+      <div class="cu-card">
+        <h3>Comienza tu curso</h3>
         <p>Comienza tu curso de inglés y aprende de manera rápida y sencilla</p>
         <img src="assets/images/happy.png" alt="Comienza tu curso">
       </div>
     </div>
   </section>
 
-  <footer id="footer-desk">
-    <div>
+  <footer>
+    <div class="footer-div">
       <p>¿Tienes preguntas? <br> <a href="mailto:contacto@eweacademy.com" target="_blank">Contáctanos</a></p>
       <p>¿Listo para dominar el inglés? <br> <a href="views/inscripcion.html">Inscríbete</a></p>
-      <p>© 2025 English with Ease. <br>Todos los derechos reservados.</p>
     </div>
-    <a href="https://www.facebook.com/EngwithEase" target="_blank" rel="noopener">
-      <img src="assets/images/facebook.png" alt="Facebook link">
-    </a>
-    <a href="mailto:contacto@eweacademy.com" target="_blank" rel="noopener">
-      <img src="assets/images/gmail.png" alt="mail to">
-    </a>
-    <a href="https://wa.me/525543826531?text=Hola,%20quiero%20más%20información%20sobre%20los%20cursos%20de%20inglés." target="_blank" rel="noopener">
-      <img src="assets/images/whatsapp.png" alt="whatsapp link">
-    </a>
-  </footer>
-
-  <footer id="footer-mob">
-    <div>
-      <p>¿Tienes preguntas? <br> <a href="mailto:contacto@eweacademy.com" target="_blank">Contáctanos</a></p>
-      <p>¿Listo para dominar el inglés? <br> <a href="views/inscripcion.html">Inscríbete</a></p>
+    <div class="footer-div">
       <p>© 2025 English with Ease. <br>Todos los derechos reservados.</p>
-      <div>
+      <div class="links-footer">
         <a href="https://www.facebook.com/EngwithEase" target="_blank" rel="noopener">
           <img src="assets/images/facebook.png" alt="Facebook link">
         </a>
@@ -197,12 +190,13 @@
         </a>
       </div>
     </div>
-    
   </footer>
 
   <div class="sub-footer">
     <p>Este sitio fue diseñado por Dev 4 All. ¿Te gustaría uno igual? Descubre más aquí.</p>
   </div>
+
   <script src="js/nav-foot.js"></script>
+  
 </body>
 </html>

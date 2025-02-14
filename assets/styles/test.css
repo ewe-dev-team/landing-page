@@ -1,13 +1,17 @@
 .test {
-  flex: 1;
-  padding-top: 110px;
+  padding: 5%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 100px;
 }
 
 #form-container {
-  margin-top: 50px;
-  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #form-container h3 {
@@ -15,7 +19,9 @@
   color: #061069;
   font-size: 20px;
   padding: 30px 0;
+  margin-top: 20px;
   margin: 0;
+  text-align: center;
 }
 
 #user-form,
@@ -23,20 +29,25 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: 650px;
   font-family: var(--texto-gral);
   color: #061069;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
-  background-color: var(--azul-ewe);
+  background-color: var(--azul-claro-ewe);
   padding: 30px;
   border-radius: 30px;
+  margin-bottom: 50px;
+}
+
+#test-container {
+  margin: 50px 0;
 }
 
 #user-form div {
-  width: 50%;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 label {
@@ -49,7 +60,7 @@ input {
   outline: none;
   border-radius: 10px;
   margin: 10px 10px 10px 0;
-  flex-grow: 1;
+  width: 59%;
 }
 
 input::placeholder {
@@ -58,7 +69,7 @@ input::placeholder {
 }
 
 #birthdate {
-  width: 100px;
+  flex-grow: 1;
   font-family: var(--texto-gral);
   color: #061069;
 }
@@ -91,7 +102,7 @@ button:hover {
   transform: scale(1.025);
 }
 
-/* Test questions */
+/*Test questions*/
 
 #test-container {
   align-self: center;
@@ -105,14 +116,17 @@ button:hover {
 }
 
 #options label {
-  display: flex;
+  font-style: var(--texto-gral);
+  color: var(--azul-fuerte-ewe);
+  font-weight: 500;
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #options input[type="radio"] {
+  accent-color: var(--rosa-ewe);
   width: 20px;
   height: 20px;
 }
@@ -122,27 +136,18 @@ button:hover {
 }
 
 #next {
-  font-family: var(--texto-gral);
-  font-size: 15px;
-  font-weight: 700;
+  font-family: var(--subtitulos);
+  font-size: 18px;
+  font-weight: 500;
   border-radius: 30px;
   color: var(--rojo-ewe);
   background-color: var(--rosa-ewe);
   padding: 10px 20px;
   border: none;
+  letter-spacing: 2px;
 }
 
 #next:disabled {
   background-color: #ccc;
   cursor: not-allowed;
-}
-
-@media (max-width: 1440px) {
-  #form-container {
-    margin-bottom: 50px;
-  }
-
-  #test-container {
-    margin: 50px 0;
-  }
 }

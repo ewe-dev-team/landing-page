@@ -8,22 +8,35 @@
   <title>Test de Nivel de Inglés</title>
 </head>
 <body>
-  <nav>
-    <img src="../assets/images/logo-img.png" alt="logo">
-    <img src="../assets/images/logo-letters.png" alt="">
+  
+  <nav id="navbar">
+    <a href="../index.html"><img class="logo-ewe" src="../assets/images/logo-img.png" alt="logo"></a>
+    <a href="../index.html"><img class="logo-ewe" src="../assets/images/logo-letters.png" alt="logo"></a>
+    <ul id="nav-desktop">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../views/cursos.html">Cursos</a></li>
+      <li><a href="../views/about-us.html">About us</a></li>
+      <li><a href="../views/contacto.html">Contacto</a></li>
+      <li><a href="../views/test-view.html">Test your English</a></li>
+      <a class="insc-btn" href="../views/inscripcion.html">Inscribirme</a>
+    </ul>
+    <button id="ham-btn" type="button"><img src="../assets/images/ham-btn.png" alt="menu btn"></button>
+    <button id="close-btn" type="button"><img src="../assets/images/close-btn.png" alt="close menu btn"></button>
+  </nav>
+
+  <section id="nav-menu" style="display: none;">
     <ul>
       <li><a href="../index.html">Inicio</a></li>
       <li><a href="cursos.html">Cursos</a></li>
       <li><a href="about-us.html">About us</a></li>
       <li><a href="contacto.html">Contacto</a></li>
       <li><a href="test-view.html">Test your English</a></li>
-      <a class="insc-btn" href="views/inscripcion.html">Inscribirme</a>
+      <a class="insc-btn" href="inscripcion.html">Inscribirme</a>
     </ul>
-    <img src="../assets/images/ham-btn.png" alt="menu btn" style="display: none;">
-    <img src="../assets/images/close-btn.png" alt="close menu btn" style="display: none;">
-  </nav>
+  </section>
 
   <main class="test">
+
     <section id="form-container">
       <h3>Completa tus datos antes de iniciar el test</h3>
       <form id="user-form">
@@ -54,7 +67,7 @@
         </div>
 
         <div id="contacto-m">
-          <label for="contact-method">Método de contácto</label>
+          <label for="contact-method">Método de contácto:</label>
           <select id="contact-method" name="contact-method" required>
             <option value="whatsapp">WhatsApp</option>
             <option value="call">Email</option>
@@ -69,27 +82,36 @@
       <div id="options"></div>
       <button id="next" disabled>Siguiente</button>
     </section>
+
   </main>
 
   <footer>
-    <div>
+    <div class="footer-div">
       <p>¿Tienes preguntas? <br> <a href="mailto:contacto@eweacademy.com" target="_blank">Contáctanos</a></p>
-      <p>¿Listo para dominar el inglés? <br> <a href="views/inscripcion.html">Inscríbete</a></p>
-      <p>© 2025 English with Ease. <br>Todos los derechos reservados.</p>
+      <p>¿Listo para dominar el inglés? <br> <a href="../views/inscripcion.html">Inscríbete</a></p>
     </div>
-    <a href="https://www.facebook.com/EngwithEase" target="_blank" rel="noopener">
-      <img src="../assets/images/facebook.png" alt="Facebook link">
-    </a>
-    <a href="mailto:contacto@eweacademy.com" target="_blank" rel="noopener">
-      <img src="../assets/images/gmail.png" alt="mail to">
-    </a>
-    <a href="https://wa.me/525543826531?text=Hola,%20quiero%20más%20información%20sobre%20los%20cursos%20de%20inglés." target="_blank" rel="noopener">
-      <img src="../assets/images/whatsapp.png" alt="whatsapp link">
-    </a>
+    <div class="footer-div">
+      <p>© 2025 English with Ease. <br>Todos los derechos reservados.</p>
+      <div class="links-footer">
+        <a href="https://www.facebook.com/EngwithEase" target="_blank" rel="noopener">
+          <img src="../assets/images/facebook.png" alt="Facebook link">
+        </a>
+        <a href="mailto:contacto@eweacademy.com" target="_blank" rel="noopener">
+          <img src="../assets/images/gmail.png" alt="mail to">
+        </a>
+        <a href="https://wa.me/525543826531?text=Hola,%20quiero%20más%20información%20sobre%20los%20cursos%20de%20inglés." target="_blank" rel="noopener">
+          <img src="../assets/images/whatsapp.png" alt="whatsapp link">
+        </a>
+      </div>
+    </div>
   </footer>
+  
   <div class="sub-footer">
     <p>Este sitio fue diseñado por Dev 4 All. ¿Te gustaría uno igual? Descubre más aquí.</p>
   </div>
+
   <script src="../js/test.js"></script>
+  <script src="../js/nav-foot.js"></script>
+
 </body>
 </html>
