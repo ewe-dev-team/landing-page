@@ -58,6 +58,20 @@ body {
   display: none;
 }
 
+/* Whatsapp button */
+
+#whatsapp {
+  height: 100px;
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  z-index: 3;
+}
+
+#whatsapp img {
+  height: 65px;
+}
+
 /* Nav Menu */
 
 #nav-menu {
@@ -98,6 +112,8 @@ footer {
   padding: 10px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 4;
 }
 
 .footer-div {
@@ -146,4 +162,6 @@ footer {
   box-sizing: border-box;
   justify-self: flex-end;
   padding: 10px;
+  position: relative;
+  z-index: 4;
 }
