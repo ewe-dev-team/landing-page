@@ -522,3 +522,120 @@
   font-weight: 400;
   width: 90%;
 }
+
+@media (min-width: 601px) {
+  #inicio-main {
+    flex-direction: row;
+    height: -webkit-fill-available;
+  }
+
+  #title-home {
+    width: 30%;
+    height: 500px;
+  }
+
+  #title-home h2 {
+    white-space: nowrap;
+  }
+
+  .home-main {
+    width: 40%;
+  }
+
+  .p-div h3 {
+    position: absolute;
+    left: -50px;
+    top: 0;
+  }
+
+  #img-1 {
+    top: -85px;
+    right: 25px;
+  }
+
+  #ico-1 {
+    bottom: -215px;
+    right: 15px;
+  }
+
+  .form-main {
+    width: 30%;
+  }
+
+  .forma-main {
+    flex-direction: row;
+    gap: 35px;
+  }
+
+  .forma-circle {
+    width: 320px;
+    height: 320px;
+    padding: 40px;
+  }
+
+  #img-2 {
+    bottom: -105px;
+    right: 165px ;
+  }
+  
+  #ico-2 {
+    top: -30px;
+    left: -15px;
+  }
+  
+  #img-3 {
+    bottom: -95px;
+    right: -50px;
+  }
+  
+  #ico-3 {
+    bottom: -45px;
+    left: 10px;
+  }
+  
+  #img-4 {
+    top: -100px;
+    left: 200px;
+  }
+  
+  #porque-title {
+    display: flex;
+  }
+  
+  #ico-4 {
+    bottom: -35px;
+    right: 10px;
+  }
+
+  #porque {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+
+  .porque-div {
+    flex-direction: row;
+  }
+
+  .porque-main img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .porque-globo {
+    height: 150px;
+    width: 390px;
+  }
+
+  .p-foot {
+    justify-content: center;
+  }
+
+  .cu-div {
+    flex-direction: row;
+  }
+
+  .cu-card {
+    min-height: 310px;
+  }
+}

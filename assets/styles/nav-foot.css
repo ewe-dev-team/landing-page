@@ -24,7 +24,7 @@ body {
   align-items: center;
   height: 100px;
   width: 100%;
-  padding: 2.5% 5%;
+  padding: 0 30px;
   position: fixed;
   box-sizing: border-box;
   z-index: 3;
@@ -164,4 +164,72 @@ footer {
   padding: 10px;
   position: relative;
   z-index: 4;
+}
+
+@media (min-width: 601px) {
+  #ham-btn,
+  #close-btn {
+    display: none;
+  }
+
+  #main-logo {
+    margin-right: 20px;
+  }
+
+  #nav-desktop {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    margin-left: auto;
+  }
+
+  #nav-desktop li a {
+    font-family: var(--subtitulos);
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 2px;
+  }
+  
+  #nav-desktop li:hover {
+    text-decoration: underline;
+    transform: scale(1.025);
+  }
+  
+  .insc-btn {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: var(--subtitulos);
+    letter-spacing: 2px;
+    border: none;
+    background: var(--rojo-ewe);
+    padding: 10px 15px;
+    border-radius: 25px;
+  }
+  
+  .insc-btn:hover {
+    transform: scale(1.025);
+  }
+
+  footer {
+    align-items: center;
+  }
+
+  .footer-div {
+    width: 50%;
+  }
+
+  #footer-div-links br {
+    display: none;
+  }
+
+  #footer-div-links a {
+    margin-left: 10px;
+  }
+  
+  .sub-footer {
+    justify-content: center;
+  }
 }

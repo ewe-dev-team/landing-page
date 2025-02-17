@@ -215,3 +215,22 @@
   width: 100%;
   margin: 20px 0;
 }
+
+@media (min-width: 601px) {
+  .intro-niveles h2 {
+    width: 60%;
+    text-align: center;
+  }
+
+  .btn-div {
+    flex-direction: row;
+    height: 450px;
+    border: solid 1px;
+    align-items: flex-end;
+  }
+
+  .btn-div button {
+    width: 200px;
+
+  }
+}
