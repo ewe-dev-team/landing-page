@@ -25,6 +25,7 @@
 	color: #000;
 	letter-spacing: 3px;
   transform: scaleY(1.4) scaleX(.9);
+  white-space: nowrap;
 }
 
 #en {
@@ -55,7 +56,7 @@
 }
 
 .home-main {
-  width: 100%;
+  width: 350px;
   
 }
 
@@ -73,7 +74,7 @@
   height: 250px;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -70px;
 }
 
 .p-div h3 {
@@ -98,8 +99,8 @@
   height: 125px;
   transform: rotate(30deg);
   position: absolute;
-  bottom: 45px;
-  right: -50px;
+  bottom: 50px;
+  right: -75px;
   z-index: 2;
 }
 
@@ -385,6 +386,8 @@
   flex-direction: column;
   align-items: center;
   padding: 15px;
+  height: 120px;
+    width: 360px;
 }
 
 .title-rojo {
@@ -493,6 +496,7 @@
   align-items: center;
   background-color: var(--rosa-ewe);
   border-radius: 20px;
+  height: 311px;
   width: 250px;
   padding: 20px;
   box-sizing: border-box;
@@ -523,10 +527,49 @@
   width: 90%;
 }
 
-@media (min-width: 601px) {
+@media (min-width: 601px) and (max-width: 1024px) {
+  .inicio-sections {
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  .home-main {
+    margin-right: 100px;
+    margin-top: 50px;
+  }
+
+  .form-home {
+    width: 55%;
+  }
+
+  .forma-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .p-foot {
+    justify-content: center;
+  }
+
+  .porque-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cu-div {
+    width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
   #inicio-main {
     flex-direction: row;
-    height: -webkit-fill-available;
   }
 
   #title-home {
@@ -539,7 +582,7 @@
   }
 
   .home-main {
-    width: 40%;
+    width: 350px;
   }
 
   .p-div h3 {
@@ -559,11 +602,18 @@
   }
 
   .form-main {
-    width: 30%;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .form-home {
+    width: 70%;
   }
 
   .forma-main {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 35px;
   }
 
@@ -609,12 +659,18 @@
 
   #porque {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-bottom: 0;
   }
 
   .porque-div {
     flex-direction: row;
+  }
+
+  .porque-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .porque-main img {

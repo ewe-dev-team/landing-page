@@ -167,6 +167,26 @@ footer {
 }
 
 @media (min-width: 601px) {
+  .footer-div {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .footer-div br {
+    display: none;
+  }
+
+  .footer-div a,
+  .footer-div p {
+    margin-left: 5px;
+  }
+  
+  .sub-footer {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1025px) {
   #ham-btn,
   #close-btn {
     display: none;
@@ -182,6 +202,11 @@ footer {
     list-style: none;
     gap: 30px;
     margin-left: auto;
+    padding: 0;
+  }
+
+  #nav-menu ul li {
+    white-space: nowrap;
   }
 
   #nav-desktop li a {
@@ -219,14 +244,17 @@ footer {
 
   .footer-div {
     width: 50%;
+    justify-content: center;
+    gap: 25px;
   }
 
-  #footer-div-links br {
+  .footer-div br {
     display: none;
   }
 
-  #footer-div-links a {
-    margin-left: 10px;
+  .footer-div a,
+  .footer-div p {
+    margin-left: 5px;
   }
   
   .sub-footer {

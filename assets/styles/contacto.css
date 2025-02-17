@@ -54,3 +54,30 @@
   position: absolute;
   height: 50px;
 }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacto {
+    justify-content: center;
+    flex: 1;
+  }
+}
+
+@media (min-width: 1025px) {
+  .div-cont {
+    gap: 50px; 
+  }
+
+  .contacto h3 {
+    width: 60%;
+    text-align: center;
+  }
+
+  .links {
+    gap: 200px;
+  }
+}

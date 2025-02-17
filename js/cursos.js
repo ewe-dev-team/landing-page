@@ -98,20 +98,20 @@ document.addEventListener('DOMContentLoaded', () => {
           <h2>Alcanzando la cima</h2>
           <h2>Vuela alto y con elegancia</h2>
         </div>
-        <div>
+        <div class="div2">
           <p>Usa el inglés con flexibilidad en un contexto profesional, académico o social, exprésate con fluidez y profundidad sobre temas complejos. Comprende discursos largos, películas, documentales y reportajes en inglés, textos especializados o literarios, y escribe documentos detallados con un estilo apropiado. Este nivel refleja un dominio avanzado del idioma.</p>
           <p>Ideal para: Personas que buscan destacarse en un entorno internacional o académico.</p>
         </div>
       </div>
 
       <div class="info-container conv-container">
-        <div>
+        <div class="div1">
           <h3>C2</h3>
           <img src="../assets/images/c2-icon.png" alt="Eagle Ic">
           <h2>La cúspide del dominio</h2>
           <h2>Conquista los cielos</h2>
         </div>
-        <div>
+        <div class="div2">
           <p>Usa el inglés con total naturalidad y precisión, adáptate a cualquier contexto con maestría y perfección. Comprende contenido desde literatura compleja hasta discursos técnicos, películas y conversaciones en diferentes acentos en dónde además capta matices sutiles, significados implícitos y expresiones idiomáticas. Escribe con estilo, corrección y creatividad en cualquier formato. Este es el nivel de maestría total.</p>
           <p>Ideal para: Personas que buscan usar el inglés al nivel de un hablante nativo.</p>
         </div>

@@ -75,7 +75,8 @@
   margin-bottom: 50px;
 }
 
-.right-div div {
+.mision,
+.vision {
   font-family: var(--texto-gral);
   display: flex;
   flex-direction: column;
@@ -96,10 +97,11 @@
   border-radius: 5px;
   line-height: 100%;
   padding: 0 2px;
-  margin: 20px 0;
+  margin: 10px 0 20px 0;
 }
 
-.right-div div p {
+.mision p, 
+.vision p {
   text-align: justify;
   font-family: var(--texto-gral);
   color: #061069;
@@ -108,4 +110,66 @@
   padding: 10px 30px;
   margin: 0 0 18px 0;
 }
+
+@media (min-width: 1025px) {
+  .left-div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .left-div img {
+    height: 250px;
+  }
+
+  .about-title {
+    margin-top: 50px;
+  }
+
+  .about-title,
+  .left-div img {
+    align-self: flex-start;
+  }
+
+  .text-div {
+    width: 40%;
+    margin-top: 70px;
+  }
+
+  .right-div {
+    width: 50%;
+    align-self: flex-start;
+    position: relative;
+  }
+
+  .mision, 
+  .vision {
+    height: 290px;
+    border-radius: 0;
+    align-items: flex-start;
+    padding: 10px 0 20px 30px;
+  }
+
+  .mision {
+    background-image: url(../images/about-mision.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    position: absolute;
+    top: -380px;
+  }
+
+  .vision {
+    background-image: url(../images/about-vision.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+
+  .mision p, 
+  .vision p {
+    padding: 0;
+    width: 80%;
+  }
+}
+
 
