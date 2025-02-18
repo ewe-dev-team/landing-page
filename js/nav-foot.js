@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const fadeInElements = document.querySelectorAll('.fade-in');
   const slideInElements = document.querySelectorAll('.slide-in-left');

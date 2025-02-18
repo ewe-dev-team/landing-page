@@ -142,9 +142,24 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    questionCounter.textContent = `Pregunta ${currentQuestionIndex + 1}/${totalQuestions}`;
+    let sectionOffset = 0;
+    switch (currentSection) {
+      case 'A2':
+        sectionOffset = 10;
+        break;
+      case 'B1':
+        sectionOffset = 20;
+        break;
+      case 'B2':
+        sectionOffset = 30;
+        break;
+      default:
+        sectionOffset = 0;
+    }
+    const totalAnsweredQuestions = currentQuestionIndex + sectionOffset;
+    questionCounter.textContent = `Pregunta ${totalAnsweredQuestions + 1}/${totalQuestions}`;
 
-    const progressPercentage = ((currentQuestionIndex + 1) / totalQuestions) * 100;
+    const progressPercentage = ((totalAnsweredQuestions + 1) / totalQuestions) * 100;
     progressBar.style.width = `${progressPercentage}%`;
   };
 
@@ -155,17 +170,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
 
     testContainer.innerHTML = `
+    <div id="results-container">
       <h1>¡Test finalizado con éxito!</h1>
-      <div>
-        <p>Tu nivel es:</p>
-        <h2>${level}</h2>
-        <img src="../assets/images/${level}-icon.png"></img>
+      <div id="main-results">
+        <div id="left-results">
+          <p>Tu nivel es:</p>
+          <h2>${level}</h2>
+          <img src="../assets/images/${level}-icon.png"></img>
+        </div>
+        <div id="right-results">
+          <h3>${info.title}</h3>
+          <h3>${info.description}</h3>
+          <a id="whatsappLink" class="button" href="${url}" target="_blank">Último paso</a>
+        </div>
       </div>
-      <div>
-        <h3>${info.title}</h3>
-        <h3>${info.description}</h3>
-        <a id="whatsappLink" class="button" href="${url}" target="_blank">Inscribirme vía WhatsApp</a>
-      </div>
+    </div>
     `;
   };
 
