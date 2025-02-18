@@ -1,24 +1,20 @@
-const hamBtn = document.getElementById('ham-btn');
-const closeBtn = document.getElementById('close-btn');
-const navMenu = document.getElementById('nav-menu');
-const footer = document.querySelector('footer');
-const subfooter = document.querySelector('.sub-footer');
-const sections = document.querySelectorAll('.inicio-sections');
+document.addEventListener('DOMContentLoaded', () => {
+  const fadeInElements = document.querySelectorAll('.fade-in');
+  const slideInElements = document.querySelectorAll('.slide-in-left');
 
-hamBtn.addEventListener('click', () => {
-  navMenu.style.display = 'flex';
-  hamBtn.style.display = 'none';
-  closeBtn.style.display = 'flex';
-  sections.forEach((section) => { section.style.display = 'none'; });
-  footer.style.display = 'none';
-  subfooter.style.display = 'none';
-});
+  const observerOptions = {
+    threshold: 0.3,
+  };
 
-closeBtn.addEventListener('click', () => {
-  navMenu.style.display = 'none';
-  hamBtn.style.display = 'flex';
-  closeBtn.style.display = 'none';
-  sections.forEach((section) => { section.style.display = 'flex'; });
-  footer.style.display = 'flex';
-  subfooter.style.display = 'flex';
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  fadeInElements.forEach((element) => observer.observe(element));
+  slideInElements.forEach((element) => observer.observe(element));
 });

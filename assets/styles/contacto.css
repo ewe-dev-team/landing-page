@@ -5,7 +5,7 @@
   align-items: center;
   overflow: hidden;
   padding-top: 100px;
-  flex: 1;
+  background-color: #cecbffde;
 }
 
 .div-cont {
@@ -30,6 +30,7 @@
   display: flex;
   justify-content: center;
   gap: 50px;
+  
 }
 
 .links a {
@@ -47,6 +48,11 @@
   align-items: center;
   gap: 10px;
   position: relative;
+  box-shadow: #00000040 5px 5px 10px;
+}
+
+.links a:hover {
+  transform: scale(1.025);
 }
 
 .links a img {

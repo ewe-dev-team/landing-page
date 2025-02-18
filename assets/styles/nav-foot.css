@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+@keyframes bounceAndRotate {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  40% {
+    transform: translateY(-30px) rotate(360deg);
+  }
+  60% {
+    transform: translateY(-15px) rotate(180deg);
+  }
+}
+
 :root {
   --rosa-ewe: #fdaff2;
   --azul-claro-ewe: #c0f9f9;
@@ -8,6 +20,37 @@
   --titulos: 'Barlow Condensed', serif;
   --subtitulos: 'Bebas Neue', serif;
   --texto-gral: 'Nunito', serif;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in, .slide-in-left {
+  opacity: 0;
+  transition: all 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-left {
+  transform: translateX(-100px);
+}
+
+.slide-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 html,
@@ -28,6 +71,7 @@ body {
   position: fixed;
   box-sizing: border-box;
   z-index: 3;
+  box-shadow: #00000040 5px 5px 10px;
 }
 
 .logo-ewe {
@@ -70,6 +114,7 @@ body {
 
 #whatsapp img {
   height: 65px;
+  animation: bounceAndRotate 4s infinite;
 }
 
 /* Nav Menu */
@@ -114,6 +159,7 @@ footer {
   flex-direction: column;
   position: relative;
   z-index: 4;
+  box-shadow: #00000040 5px 5px 10px;
 }
 
 .footer-div {
@@ -128,6 +174,10 @@ footer {
   font-family: var(--texto-gral);
   font-size: 13px;
   font-weight: 700;
+}
+
+.footer-div a:hover {
+  transform: scale(1.1);
 }
 
 .footer-div p {
@@ -146,6 +196,10 @@ footer {
 .links-footer img {
   height: 30px;
   margin: 5px;
+}
+
+.links-footer img:hover {
+  transform: scale(1.1);
 }
 
 .sub-footer {
@@ -232,6 +286,7 @@ footer {
     background: var(--rojo-ewe);
     padding: 10px 15px;
     border-radius: 25px;
+    box-shadow: #00000040 5px 5px 10px;
   }
   
   .insc-btn:hover {

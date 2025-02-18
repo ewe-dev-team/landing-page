@@ -5,6 +5,7 @@
   align-items: center;
   overflow: hidden;
   padding-top: 100px;
+  background-color: #cecbffde;
 }
 
 .intro-niveles {
@@ -42,6 +43,7 @@
   border-radius: 10px;
   margin: 20px 0;
   white-space: nowrap;
+  box-shadow: #00000040 5px 5px 10px;
 }
 
 .btn-div {
@@ -61,6 +63,7 @@
   font-size: 25px;
   border: none;
   height: 202px;
+  box-shadow: #00000040 5px 5px 10px;
 }
 
 .btn-div button h2 {
@@ -121,6 +124,7 @@
   box-sizing: border-box;
   border-radius: 30px;
   color: #061069;
+  box-shadow: #00000040 5px 5px 10px;
 }
 
 .info-container h3 {
@@ -174,6 +178,7 @@
   margin: 60px 0 50px 0;
   border: none;
   white-space: nowrap;
+  box-shadow: #00000040 5px 5px 10px;
 }
 
 #conv-info {
