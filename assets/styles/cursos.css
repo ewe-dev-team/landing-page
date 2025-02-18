@@ -127,6 +127,14 @@
   box-shadow: #00000040 5px 5px 10px;
 }
 
+.info-container h2 {
+  font-size: 18px;
+  font-family: var(--texto-gral);
+  color: var(--azul-fuerte-ewe);
+  text-align: center;
+  width: max-content;
+}
+
 .info-container h3 {
   font-size: 30px;
   font-weight: 500;

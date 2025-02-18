@@ -1,6 +1,24 @@
+const hamBtn = document.getElementById('ham-btn');
+const closeBtn = document.getElementById('close-btn');
+const navMenu = document.getElementById('nav-menu');
+
+hamBtn.addEventListener('click', () => {
+  navMenu.style.display = 'flex';
+  hamBtn.style.display = 'none';
+  closeBtn.style.display = 'block';
+});
+
+closeBtn.addEventListener('click', () => {
+  navMenu.style.display = 'none';
+  hamBtn.style.display = 'block';
+  closeBtn.style.display = 'none';
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   const fadeInElements = document.querySelectorAll('.fade-in');
-  const slideInElements = document.querySelectorAll('.slide-in-left');
+  const slideInLeftElements = document.querySelectorAll('.slide-in-left');
+  const slideInRightElements = document.querySelectorAll('.slide-in-right');
+  const zoomInElements = document.querySelectorAll('.zoom-in');
 
   const observerOptions = {
     threshold: 0.3,
@@ -16,5 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, observerOptions);
 
   fadeInElements.forEach((element) => observer.observe(element));
-  slideInElements.forEach((element) => observer.observe(element));
+  slideInLeftElements.forEach((element) => observer.observe(element));
+  slideInRightElements.forEach((element) => observer.observe(element));
+  zoomInElements.forEach((element) => observer.observe(element));
 });
