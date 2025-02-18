@@ -61,6 +61,50 @@
   transform: translateX(0);
 }
 
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.6s ease-out;
+}
+
+.slide-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 0.6s ease-out;
+}
+
+.zoom-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
 html,
 body {
   margin: 0;
@@ -121,7 +165,7 @@ body {
 }
 
 #whatsapp img {
-  height: 65px;
+  height: 50px;
   animation: bounceAndRotate 4s infinite;
 }
 
@@ -252,6 +296,10 @@ footer {
   #ham-btn,
   #close-btn {
     display: none;
+  }
+
+  #whatsapp img {
+    height: 60px;
   }
 
   #main-logo {
