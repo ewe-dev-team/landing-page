@@ -103,3 +103,9 @@ span {
   bottom: -55px;
   right: -50px;
 }
+
+@media (min-width: 1024px) {
+  .div-test-v p {
+    text-align: center;
+  }
+}

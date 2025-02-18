@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentSection = 'A1';
   let correctAnswers = 0;
   const totalQuestions = 40;
+  let nombre = '';
+  let apellido = '';
 
   const testQuestions = {
     A1: [
@@ -140,26 +142,49 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    questionCounter.textContent = `Pregunta ${currentQuestionIndex + 1}/${totalQuestions}`;
+    let sectionOffset = 0;
+    switch (currentSection) {
+      case 'A2':
+        sectionOffset = 10;
+        break;
+      case 'B1':
+        sectionOffset = 20;
+        break;
+      case 'B2':
+        sectionOffset = 30;
+        break;
+      default:
+        sectionOffset = 0;
+    }
+    const totalAnsweredQuestions = currentQuestionIndex + sectionOffset;
+    questionCounter.textContent = `Pregunta ${totalAnsweredQuestions + 1}/${totalQuestions}`;
 
-    const progressPercentage = ((currentQuestionIndex + 1) / totalQuestions) * 100;
+    const progressPercentage = ((totalAnsweredQuestions + 1) / totalQuestions) * 100;
     progressBar.style.width = `${progressPercentage}%`;
   };
 
   const endTest = (level) => {
     const info = infoData[level];
+    const telefono = '525543826531';
+    const mensaje = `Hola, soy ${nombre} ${apellido}, acabo de realizar mi test y obtuve el nivel ${level}. Quisiera continuar con mi proceso de inscripción. ¿Me pueden ayudar?`;
+    const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+
     testContainer.innerHTML = `
+    <div id="results-container">
       <h1>¡Test finalizado con éxito!</h1>
-      <div>
-        <p>Tu nivel es:</p>
-        <h2>${level}</h2>
-        <img src="../assets/images/${level}-icon.png"></img>
+      <div id="main-results">
+        <div id="left-results">
+          <p>Tu nivel es:</p>
+          <h2>${level}</h2>
+          <img src="../assets/images/${level}-icon.png"></img>
+        </div>
+        <div id="right-results">
+          <h3>${info.title}</h3>
+          <h3>${info.description}</h3>
+          <a id="whatsappLink" class="button" href="${url}" target="_blank">Último paso</a>
+        </div>
       </div>
-      <div>
-        <h3>${info.title}</h3>
-        <h3>${info.description}</h3>
-        <a class="button" href="../views/inscripcion.html">Continuar a Inscripción</a>
-      </div>
+    </div>
     `;
   };
 
@@ -199,12 +224,14 @@ document.addEventListener('DOMContentLoaded', () => {
       correctAnswers = 0;
       loadQuestion();
     } else {
-      endTest(`${currentSection}`);
+      endTest(currentSection);
     }
   };
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
+    nombre = document.getElementById('name').value;
+    apellido = document.getElementById('lastname').value;
     formContainer.style.display = 'none';
     testContainer.style.display = 'flex';
     loadQuestion();
