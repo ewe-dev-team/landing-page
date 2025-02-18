@@ -1,44 +1,42 @@
-// Selecciona el formulario
-const form = document.getElementById('registrationForm'); // Usamos el id del formulario
+const form = document.getElementById('registrationForm');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault(); // Previene el envío normal del formulario
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
 
-  // Recopila los datos del formulario
   const nombre = document.getElementById('name').value;
   const edad = document.getElementById('age').value;
   const correo = document.getElementById('email').value;
   const telefono = document.getElementById('tel').value;
 
-  // Crea un objeto con los datos del formulario
   const data = {
-    nombre: nombre,
-    edad: edad,
-    correo: correo,
-    telefono: telefono
+    nombre,
+    edad,
+    correo,
+    telefono,
   };
 
-  // Configura la URL de tu script de Google Apps (Google Sheets)
-  const scriptUrl = 'https://script.google.com/macros/s/AKfycbw5yW5d0zhklJmM0627afkqKdBOG-utqq2-dkajjSHEYS5JCBhZ3XrUUF9iyTFqm9Sg/exec'; // Asegúrate de usar la URL correcta de tu script de Apps Script
+  const scriptUrl = 'https://script.google.com/macros/s/AKfycbw5yW5d0zhklJmM0627afkqKdBOG-utqq2-dkajjSHEYS5JCBhZ3XrUUF9iyTFqm9Sg/exec';
 
-  // Envía los datos usando fetch
-  fetch(scriptUrl, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data)
-  })
-  .then(response => {
+  try {
+    const response = await fetch(scriptUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    const mensajeError = document.getElementById('mensaje-error');
+
     if (response.ok) {
-      alert('¡Formulario enviado con éxito!');
-      form.reset(); // Limpiar el formulario después de enviarlo
+      if (mensajeError) mensajeError.textContent = 'Formulario enviado con éxito';
+      form.reset();
     } else {
-      alert('Hubo un problema al enviar el formulario.');
+      if (mensajeError) mensajeError.textContent = 'Hubo un problema al enviar el formulario.';
+      form.reset();
     }
-  })
-  .catch(error => {
-    console.error('Error al enviar el formulario:', error);
-    alert('Error al enviar el formulario. Por favor, inténtalo nuevamente.');
-  });
+  } catch (error) {
+    const mensajeError = document.getElementById('mensaje-error');
+    if (mensajeError) mensajeError.textContent = 'Error al enviar el formulario. Inténtalo nuevamente.';
+  }
 });
