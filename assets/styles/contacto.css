@@ -30,7 +30,6 @@
   display: flex;
   justify-content: center;
   gap: 50px;
-  
 }
 
 .links a {
@@ -75,7 +74,7 @@
 
 @media (min-width: 1025px) {
   .div-cont {
-    gap: 50px; 
+    gap: 50px;
   }
 
   .contacto h3 {

@@ -31,7 +31,7 @@
   background-color: #061069;
   letter-spacing: 1px;
   font-weight: 500;
-  transform: scaleY(1.4) scaleX(.9);
+  transform: scaleY(1.4) scaleX(0.9);
   line-height: 95%;
   border-radius: 10px;
   width: fit-content;
@@ -46,7 +46,7 @@
   background-color: var(--rojo-ewe);
   letter-spacing: 1px;
   font-weight: 500;
-  transform: scaleY(1.4) scaleX(.9);
+  transform: scaleY(1.4) scaleX(0.9);
   line-height: 95%;
   border-radius: 10px;
   position: absolute;
@@ -104,7 +104,7 @@
   margin: 10px 0 20px 0;
 }
 
-.mision p, 
+.mision p,
 .vision p {
   text-align: justify;
   font-family: var(--texto-gral);
@@ -145,7 +145,7 @@
     position: relative;
   }
 
-  .mision, 
+  .mision,
   .vision {
     height: 290px;
     border-radius: 0;
@@ -169,11 +169,9 @@
     background-color: transparent;
   }
 
-  .mision p, 
+  .mision p,
   .vision p {
     padding: 0;
     width: 80%;
   }
 }
-
-

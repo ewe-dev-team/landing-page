@@ -17,7 +17,7 @@
 }
 
 .intro-niveles h2 {
-	color: #061069;
+  color: #061069;
   font-family: var(--texto-gral);
   font-size: 20px;
   text-align: justify;
@@ -26,7 +26,7 @@
   width: 90%;
 }
 
-.cefr  {
+.cefr {
   height: 150px;
   padding: 20px 0;
 }
@@ -38,7 +38,7 @@
   background-color: var(--rosa-ewe);
   letter-spacing: 1px;
   font-weight: 500;
-  transform: scaleY(1.4) scaleX(.9);
+  transform: scaleY(1.4) scaleX(0.9);
   line-height: 95%;
   border-radius: 10px;
   margin: 20px 0;
@@ -73,7 +73,7 @@
 
 #a1 {
   width: 55%;
-  background-color: #A5C6F7;
+  background-color: #a5c6f7;
 }
 
 #a1 img {
@@ -82,7 +82,7 @@
 
 #a2 {
   width: 66.67%;
-  background-color: #5294F7;
+  background-color: #5294f7;
 }
 
 #a2 img {
@@ -91,7 +91,7 @@
 
 #b1 {
   width: 78.34%;
-  background-color: #297BF7;
+  background-color: #297bf7;
 }
 
 #b1 img {
@@ -100,7 +100,7 @@
 
 #b2 {
   width: 90%;
-  background-color: #0052CD;
+  background-color: #0052cd;
 }
 
 #b2 img {
@@ -142,12 +142,6 @@
   width: max-content;
 }
 
-.info-container h2 {
-  font-family: var(--texto-gral);
-  font-size: 25px;
-  font-weight: 700;
-}
-
 .info-container p {
   font-family: var(--texto-gral);
   font-size: 18px;
@@ -163,11 +157,9 @@
   font-family: var(--texto-gral);
   font-size: 18px;
   font-weight: 400;
-  display: flex;
 }
 
 #conv-btn {
-  font-size: 35px;
   font-family: var(--texto-gral);
   font-size: 30px;
   font-weight: 700;
@@ -223,7 +215,7 @@
 
 @media (max-width: 321px) {
   #conv-btn {
-    white-space: wrap;
+    white-space: nowrap;
   }
 
   #b2 img {
@@ -255,16 +247,16 @@
 
   .btn-div button:hover,
   #conv-btn:hover {
-    scale: 103%;
-    box-shadow: 4px 4px 10px 0px rgba(0,0,0,0.65);
-}
+    transform: scale(1.025);
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.65);
+  }
 
   .btn-div button h2 {
     position: absolute;
     bottom: -70px;
   }
 
-  #a1, 
+  #a1,
   #a2,
   #b1,
   #b2 {
