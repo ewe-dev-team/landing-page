@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentSection = 'A1';
   let correctAnswers = 0;
   const totalQuestions = 40;
+  let nombre = '';
+  let apellido = '';
 
   const testQuestions = {
     A1: [
@@ -148,6 +150,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const endTest = (level) => {
     const info = infoData[level];
+    const telefono = '525543826531';
+    const mensaje = `Hola, soy ${nombre} ${apellido}, acabo de realizar mi test y obtuve el nivel ${level}. Quisiera continuar con mi proceso de inscripción. ¿Me pueden ayudar?`;
+    const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+
     testContainer.innerHTML = `
       <h1>¡Test finalizado con éxito!</h1>
       <div>
@@ -158,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div>
         <h3>${info.title}</h3>
         <h3>${info.description}</h3>
-        <a class="button" href="../views/inscripcion.html">Continuar a Inscripción</a>
+        <a id="whatsappLink" class="button" href="${url}" target="_blank">Inscribirme vía WhatsApp</a>
       </div>
     `;
   };
@@ -199,12 +205,14 @@ document.addEventListener('DOMContentLoaded', () => {
       correctAnswers = 0;
       loadQuestion();
     } else {
-      endTest(`${currentSection}`);
+      endTest(currentSection);
     }
   };
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
+    nombre = document.getElementById('name').value;
+    apellido = document.getElementById('lastname').value;
     formContainer.style.display = 'none';
     testContainer.style.display = 'flex';
     loadQuestion();
