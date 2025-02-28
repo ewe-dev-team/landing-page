@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/styles/nav-foot.css">
   <link rel="stylesheet" href="../assets/styles/more-info-form.css"> 
-  <title>Cursos EwE</title>
+  <link rel="icon" href="../assets/images/logo-img.png" type="image/png">
+  <title>Contacto</title>
 </head>
 <body>
   
@@ -13,12 +14,12 @@
     <a href="../index.html"><img class="logo-ewe" src="../assets/images/logo-img.png" alt="logo"></a>
     <a href="../index.html"><img class="logo-ewe" src="../assets/images/logo-letters.png" alt="logo"></a>
     <ul id="nav-desktop">
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="../views/cursos.html">Cursos</a></li>
-      <li><a href="../views/about-us.html">About us</a></li>
-      <li><a href="../views/contacto.html">Contacto</a></li>
-      <li><a href="../views/test-view.html">Test your English</a></li>
-      <a class="insc-btn" href="../views/inscripcion.html">Inscribirme</a>
+      <li><a href="../index.html">INICIO</a></li>
+      <li><a href="../views/cursos.html">CURSOS</a></li>
+      <li><a href="../views/about-us.html">ABOUT US</a></li>
+      <li><a href="../views/contacto.html">CONTACTO</a></li>
+      <li><a href="../views/test-view.html">TEST YOUR ENGLISH</a></li>
+      <a class="insc-btn" href="../views/inscripcion.html">INSCRIBIRME</a>
     </ul>
     <button id="ham-btn" type="button"><img src="../assets/images/ham-btn.png" alt="menu btn"></button>
     <button id="close-btn" type="button"><img src="../assets/images/close-btn.png" alt="close menu btn"></button>
@@ -38,14 +39,16 @@
   <main class="form-section">
 
     <div class="more-form">
-      <p>Regístrate ahora para recibir más información sobre el curso y conocer todos los detalles de los costos.</p>
-      <form id="registrationForm">
-        <input id="name" type="text" placeholder="Nombre">
-        <input id="email" type="email" placeholder="Correo">
-        <input id="tel" type="tel" placeholder="Teléfono">
-        <input type="date" id="birthdate" name="birthdate" required>
-        <button type="submit">Enviar</button>
-      </form>
+      <div class="form-home slide-in-right">
+        <p>Regístrate ahora para recibir más información sobre el curso y conocer todos los detalles de los costos.</p>
+        <form class="form" action="">
+          <input id="name" type="text" placeholder="Nombre" required>
+          <input id="email" type="email" placeholder="Correo" required>
+          <input id="tel" type="tel" placeholder="Teléfono" required>
+          <input id="birthdate" type="date" name="birthdate" required>
+          <button class="pink-btn form-btn">ENVIAR</button>
+        </form>
+      </div>
     </div>
 
   </main>

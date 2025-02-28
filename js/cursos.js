@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const infoData = {
     A1: {
-      title: 'El inicio del viaje',
+      title: 'EL INICIO DEL VIAJE.',
       description: 'ROMPE EL CASCARÓN DEL IDIOMA.',
       details: [
         'Comienza a explorar lo esencial del inglés, construyendo la base para tu crecimiento. Aprende a usar frases simples para presentarte, hablar sobre tu entorno y satisfacer necesidades básicas. Este es tu primer paso hacia el dominio del idioma.',
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ],
     },
     A2: {
-      title: 'Descubriendo tu entorno',
+      title: 'DESCUBRIENDO TU ENTORNO.',
       description: 'EMPIEZA A DAR TUS PRIMEROS ALETEOS.',
       details: [
         'Adquiere herramientas para manejar situaciones simples y cotidianas mientras te acostumbras al mundo del idioma. Desenvuelvete en situaciones cotidianas como hacer compras, hablar sobre tu familia o dar instrucciones simples. Entenderás frases comunes, comunicarte en intercambios simples y escribir mensajes cortos.  Tu confianza empieza a crecer.',
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ],
     },
     B1: {
-      title: 'Despegando con confianza.',
+      title: 'DESPEGANDO CON CONFIANZA.',
       description: 'ATRÉVETE A VOLAR MÁS ALTO.',
       details: [
         'Conecta ideas,expresa tus experiencias, metas y opiniones con mayor soltura y aborda nuevos horizontes en tu aprendizaje. Desenvuelvete en viajes y en conversaciones sobre temas familiares o de interés personal. Comprende los puntos principales de textos claros, sigue películas o programas con lenguaje estándar y escribe textos simples pero conectados.',
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ],
     },
     B2: {
-      title: 'Ampliando horizontes.',
+      title: 'AMPLIANDO HORIZONTES.',
       description: 'DOMINA EL VIENTO.',
       details: [
         'Mejora tu fluidez, enfrenta desafíos más complejos y muévete con seguridad en ambientes más exigentes. Tus habilidades se fortalecen y te permiten manejar discusiones más complejas. Habla con fluidez sobre temas abstractos o especializados, adaptándote a contextos sociales y profesionales. Entiende textos más técnicos y conversaciones rápidas, charlas, y reportajes en inglés estándar. Participa activamente en debates, y escribe ensayos o informes claros y bien estructurados.',

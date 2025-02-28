@@ -5,7 +5,7 @@
   align-items: center;
   overflow: hidden;
   padding-top: 100px;
-  background-color: #ffcbcbde;
+  background: linear-gradient(180deg,#fff, var(--azul-claro-ewe));
 }
 
 .div-cont {
@@ -16,17 +16,17 @@
 }
 
 .contacto h3 {
-  color: #061069;
+  color: #000;
   font-family: var(--texto-gral);
-  font-size: 20px;
+  font-size: 21px;
   text-align: justify;
-  font-weight: 500;
+  font-weight: 300;
   margin-bottom: 10px;
   width: 90%;
 }
 
 .links {
-  margin: 100px 0 50px 0;
+  margin: 50px 0 50px 0;
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -35,19 +35,19 @@
 .links a {
   color: var(--rojo-ewe);
   font-family: var(--subtitulos);
+  font-weight: 300;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   background-color: var(--rosa-ewe);
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 5px 25px;
-  letter-spacing: 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   position: relative;
-  box-shadow: #00000040 5px 5px 10px;
+  letter-spacing: 2px;
 }
 
 .links a:hover {
