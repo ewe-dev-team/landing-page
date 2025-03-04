@@ -87,6 +87,7 @@
   height: 202px;
   background: linear-gradient(-90deg, #235093, var(--azul-claro-ewe));
   border-radius: 15px;
+  position: relative;
 }
 
 .btn-div button h2 {
@@ -96,6 +97,8 @@
   font-family: var(--subtitulos);
   font-weight: 300;
   font-size: 21px;
+  position: absolute;
+  right: -60px;
 }
 
 #a1 {
@@ -266,7 +269,7 @@
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .intro-niveles h2 {
     width: 60%;
     text-align: center;

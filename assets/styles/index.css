@@ -142,6 +142,7 @@
 
 #birthdate {
   margin-left: auto;
+  color: rgb(104, 104, 104);
 }
 
 .pink-btn {
@@ -242,6 +243,8 @@
 #porque-title {
   display: flex;
   flex-direction: column;
+  width: fit-content;
+  align-self: center;
 }
 
 #porque-title h2 {
@@ -280,6 +283,15 @@
   justify-content: center;
   position: relative;
   left: -50px;
+  position: relative;
+  margin-top: 70px;
+}
+
+.bubble img {
+  width: 150px;
+  position: absolute;
+  top: -110px;
+  right: 105px;
 }
 
 .bubble p {
@@ -293,10 +305,27 @@
 
 .porque-main {
   margin: 70px 0 50px 0;
+  width: 100%;
 }
 
-.porque-div:nth-child(2) {
+.porque-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.porque-div:nth-child(1),
+.porque-div:nth-child(3) {
   flex-direction: row-reverse;
+}
+
+.porque-div img {
+  width: 80px;
+}
+
+#carita {
+  width: 50px;
+  right: 30px;
 }
 
 .porque-p {
@@ -304,6 +333,7 @@
   flex-direction: column;
   align-items: center;
   padding: 25px 0;
+  width: 200px;
 }
 
 .title-rojo {
@@ -319,6 +349,13 @@
   line-height: 90%;
   text-align: center;
   margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.porque-izq {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .porque-p p {
@@ -419,9 +456,89 @@
   width: 90%;
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
-  
+@media (max-width: 320px) {
+  #title-home {
+    padding-bottom: 80px;
+  }
+
+  #img-1 {
+    height: 200px;
+    right: -25px;
+  }
+
+  #ico-1 {
+    height: 80px;
+    bottom: 135px;
+    right: -10px;
+  }
+
+  .form-home {
+    height: 430px;
+  }
+
+  #birthdate {
+    width: 40%;
+  }
+
+  .porque-izq {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+  }
+
+  #porque-title {
+    align-self: center;
+  }
+
+  #porque-title h1 {
+    font-size: 90px;
+    width: fit-content;
+  }
+
+  .bubble {
+    left: -5px;
+  }
 }
+
+@media (max-width: 375px) {
+  #porque-title h1 {
+    font-size: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .forma-main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .forma-div {
+    width: 220px;
+  }
+
+  .forma-div p {
+    height: 160px;
+  }
+
+  #porque-title {
+    width: fit-content;
+    align-self: center;
+  }
+
+  .porque-main {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+  }
+
+  .porque-p {
+    width: 230px;
+  }
+}
+
 
 @media (min-width: 1024px) {
   #inicio-main {
@@ -429,6 +546,7 @@
     justify-content: center;
     align-items: flex-start;
     padding-top: 220px;
+    padding-bottom: 150px;
   }
 
   #title-home {
@@ -472,7 +590,7 @@
 
   .form-main {
     width: fit-content;
-    margin-left: 190px;
+    margin-left: 180px;
   }
 
   .form-home {
@@ -512,11 +630,12 @@
 
   .porque-izq {
     margin: 70px 0 100px 0;
+    width: fit-content;
   }
 
   #porque-title {
-    display: flex;
     margin-left: 100px;
+    width: fit-content;
   }
 
   .porque-div {
@@ -524,21 +643,25 @@
   }
 
   .porque-main {
+    width: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 100px;
-    gap: 20px;
+    gap: 40px;
   }
 
   .porque-p {
     width: 300px;
-    padding: 25px;
-    margin-left: 150px;
+    padding: 15px;
   }
 
   .porque-p:nth-child(2) {
     margin-left: 0;
+  }
+
+  .bubble {
+    left: 0;
   }
 
   .cu-div {

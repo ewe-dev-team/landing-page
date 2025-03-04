@@ -54,8 +54,7 @@
 
 .historia-div img {
   margin: 20px 0;
-  width: 100px;
-  height: 100px;
+  width: 200px;
 }
 
 .detras-de-ewe {
@@ -92,7 +91,44 @@
   align-items: center;
 }
 
-@media (min-width: 1025px) {
+@media (max-width: 320px) {
+  .about-title h1 {
+    font-size: 90px;
+  }
+}
+
+@media (min-width: 768px) {
+  .historia-div,
+  .detras-de-ewe {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .detras-de-ewe {
+    align-items: center;
+  }
+
+  .detras {
+    margin: 0;
+    width: 350px;
+  }
+
+  .historia {
+    width: 450px;
+  }
+
+  .mision-vision {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .m-s {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
   .about-title {
     flex-direction: row;
     gap: 50px;

@@ -11,7 +11,7 @@
   }
 
   40% {
-    transform: translateY(-30px) rotate(360deg);
+    transform: translateY(-20px) rotate(360deg);
   }
 
   60% {
@@ -299,6 +299,7 @@ footer {
   padding: 0;
   position: relative;
   z-index: 4;
+  display: none;
 }
 
 .sub-footer p {
@@ -325,7 +326,7 @@ footer {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   #ham-btn,
   #close-btn {
     display: none;

@@ -6,6 +6,7 @@
   overflow: hidden;
   padding-top: 100px;
   background-color: #cecbffde;
+  background: linear-gradient(180deg, #ffb4bade, #fff, var(--azul-claro-ewe));
 }
 
 .test-logo {
@@ -47,6 +48,10 @@
   font-weight: 300;
   margin-bottom: 10px;
   width: 90%;
+}
+
+.test-view img {
+  width: 170px;
 }
 
 span {
