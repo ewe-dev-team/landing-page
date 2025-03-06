@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/styles/nav-foot.css">
   <link rel="stylesheet" href="../assets/styles/cursos.css">
-  <title>Cursos EwE</title>
+  <link rel="icon" href="../assets/images/logo-img.png" type="image/png">
+  <title>Cursos</title>
 </head>
 <body>
   
   <nav id="navbar">
-    <a href="../index.html"><img class="logo-ewe" src="../assets/images/logo-img.png" alt="logo"></a>
+    <a id="main-logo" href="../index.html"><img class="logo-ewe" src="../assets/images/logo-ewe-nuevo.png" alt="logo"></a>
     <a href="../index.html"><img class="logo-ewe" src="../assets/images/logo-letters.png" alt="logo"></a>
     <ul id="nav-desktop">
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="../views/cursos.html">Cursos</a></li>
-      <li><a href="../views/about-us.html">About us</a></li>
-      <li><a href="../views/contacto.html">Contacto</a></li>
-      <li><a href="../views/test-view.html">Test your English</a></li>
-      <a class="insc-btn" href="../views/inscripcion.html">Inscribirme</a>
+      <li><a class="nav-link" href="../index.html">INICIO</a></li>
+      <li><a class="nav-link" href="../views/cursos.html">CURSOS</a></li>
+      <li><a class="nav-link" href="../views/about-us.html">ABOUT US</a></li>
+      <li><a class="nav-link" href="../views/contacto.html">CONTACTO</a></li>
+      <li><a class="nav-link" href="../views/test-view.html">TEST YOUR ENGLISH</a></li>
+      <a class="insc-btn" href="../views/inscripcion.html">INSCRIBIRME</a>
     </ul>
     <button id="ham-btn" type="button"><img src="../assets/images/ham-btn.png" alt="menu btn"></button>
     <button id="close-btn" type="button"><img src="../assets/images/close-btn.png" alt="close menu btn"></button>
@@ -31,7 +32,7 @@
       <li><a href="about-us.html">About us</a></li>
       <li><a href="contacto.html">Contacto</a></li>
       <li><a href="test-view.html">Test your English</a></li>
-      <a class="insc-btn" href="inscripcion.html">Inscribirme</a>
+      <a class="insc-btn" href="inscripcion.html">INSCRIBIRME</a>
     </ul>
   </section>
 
@@ -41,29 +42,34 @@
 
   <main class="niveles">
 
+  <div class="titulo-niveles">
+    <h2>Nuestros</h2>
+    <h1>CURSOS</h1>
+  </div>
+
   <div class="intro-niveles slide-in-left">
     <h2>Explora nuestros cursos y encuentra el que mejor se adapte a tu nivel y necesidades</h2>
     <img class="cefr" src="../assets/images/cefr.png" alt="">
     <h2>Nuestro programa sigue el Marco Común Europeo de Referencia para las Lenguas (CEFR), cubriendo los niveles A1 a B2, cada uno dividido en dos subniveles para facilitar el aprendizaje progresivo.</h2>
   </div>
 
-  <h2 id="btn-div-title" class="fade-in">NUESTROS CURSOS</h2>
+  <h2 id="btn-div-title" class="fade-in">NIVELES</h2>
 
   <div class="btn-div">
-    <button class="fade-in" type="button" id="a1" data-level="A1">
+    <button type="button" id="a1" data-level="A1">
       <img src="../assets/images/a1-icon.png" alt="Level Icon">
       <h2>A1</h2>
     </button>
-    <button class="fade-in" type="button" id="a2" data-level="A2">
+    <button type="button" id="a2" data-level="A2">
       <img src="../assets/images/a2-icon.png" alt="Level Icon">
       <h2>A2</h2>
     </button>
-    <button class="fade-in" type="button" id="b1" data-level="B1">
+    <button type="button" id="b1" data-level="B1">
       <img src="../assets/images/b1-icon.png" alt="Level Icon">
       <h2>B1</h2>
     </button>
-    <button class="fade-in" type="button" id="b2" data-level="B2">
-      <img src="../assets/images/b2-icon-mob.png" alt="Level Icon">
+    <button type="button" id="b2" data-level="B2">
+      <img src="../assets/images/b2-icon.png" alt="Level Icon">
       <h2>B2</h2>
     </button>
   </div>
@@ -72,7 +78,7 @@
     <!-- Contenido en JS -->
   </div>
 
-  <button type="button" id="conv-btn" class="slide-in-left">Advanced Conversational</button>
+  <button type="button" id="conv-btn">ADVANCED CONVERSATIONAL</button>
   <div id="conv-info">
     <!-- Contenido en JS -->
   </div>
