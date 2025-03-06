@@ -5,7 +5,7 @@
   align-items: center;
   overflow: hidden;
   padding-top: 100px;
-  background: linear-gradient(180deg,#fff, var(--azul-claro-ewe));
+  background: linear-gradient(180deg, #fff, var(--azul-claro-ewe));
 }
 
 .div-cont {
@@ -16,7 +16,7 @@
 }
 
 .div-cont img {
-  width: 150px;
+  width: 240px;
 }
 
 .contacto h3 {
@@ -41,7 +41,7 @@
   font-family: var(--subtitulos);
   font-weight: 300;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   background-color: var(--rosa-ewe);
   border-radius: 15px;
@@ -77,6 +77,10 @@
 }
 
 @media (min-width: 1024px) {
+  .contacto {
+    padding-bottom: 0;
+  }
+
   .div-cont {
     gap: 50px;
   }
@@ -88,5 +92,6 @@
 
   .links {
     gap: 200px;
+    margin-bottom: 0;
   }
 }

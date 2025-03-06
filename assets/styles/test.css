@@ -274,8 +274,6 @@ button:hover {
   height: 100px;
 }
 
-
-
 @media (min-width: 1024px) {
   #user-form {
     width: 250px;
