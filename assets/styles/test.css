@@ -12,7 +12,7 @@ body {
   padding-top: 100px;
   background: linear-gradient(180deg, #ffb4bade, #fff);
   flex: 1;
-justify-content: center;
+  justify-content: center;
 }
 
 #form-container {
