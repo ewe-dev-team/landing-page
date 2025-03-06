@@ -85,7 +85,7 @@
   justify-content: center;
   border: none;
   height: 202px;
-  background: linear-gradient(-90deg, #235093, var(--azul-claro-ewe));
+  background: linear-gradient(180deg, var(--azul-claro-ewe) 45%, #f3bbd3);
   border-radius: 15px;
   position: relative;
 }
@@ -256,14 +256,12 @@
 
   #b2 img {
     height: 160px;
-    margin-left: 50px;
   }
 }
 
 @media (max-width: 376px) {
   #b2 img {
     height: 160px;
-    margin-left: 50px;
   }
 }
 
@@ -282,7 +280,7 @@
   }
 
   .btn-div button {
-    background: linear-gradient(180deg, #235093, var(--azul-claro-ewe));
+    background: linear-gradient(180deg, var(--azul-claro-ewe) 45%, #f3bbd3);
   }
 
   .btn-div button:hover {
@@ -296,6 +294,7 @@
   .btn-div button h2 {
     position: absolute;
     bottom: -70px;
+    right: 100px;
   }
 
   #a1,

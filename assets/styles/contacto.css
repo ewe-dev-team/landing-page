@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
   padding-top: 100px;
   background: linear-gradient(180deg, #fff, var(--azul-claro-ewe));
 }
@@ -77,8 +76,14 @@
 }
 
 @media (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
   .contacto {
-    padding-bottom: 0;
+    flex: 1;
+    padding-bottom: 10px;
   }
 
   .div-cont {

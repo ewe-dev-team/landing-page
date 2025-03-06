@@ -142,6 +142,7 @@
 
 #birthdate {
   margin-left: auto;
+  width: 38%;
   color: rgb(104, 104, 104);
 }
 
@@ -227,7 +228,7 @@
   font-size: 16px;
   font-weight: 300;
   text-align: center;
-  margin: 20px 0;
+  /* margin: 20px 0; */
 }
 
 .forma-div img {
@@ -421,7 +422,7 @@
   height: 120px;
   position: absolute;
   bottom: 20px;
-  right: -32px;
+  right: 20px;
 }
 
 .cu-card {
@@ -430,10 +431,11 @@
   align-items: center;
   background-color: var(--rosa-ewe);
   border-radius: 20px;
-  min-height: 385px;
-  width: 165px;
+  min-height: 320px;
+  width: 250px;
   padding: 20px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .cu-card h3 {
@@ -477,6 +479,7 @@
   }
 
   .form-home {
+    width: 200px;
     height: 430px;
   }
 
@@ -524,7 +527,7 @@
   }
 
   .forma-div p {
-    height: 160px;
+    height: 120px;
   }
 
   #porque-title {
