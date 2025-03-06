@@ -207,15 +207,6 @@ body {
   text-decoration: none;
 }
 
-#nav-menu ul li a {
-  color: #000;
-  font-family: var(--subtitulos);
-  font-size: 18px;
-  font-weight: 300;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
 .insc-btn {
   color: #fff;
   font-size: 18px;
@@ -233,7 +224,7 @@ body {
 /* Footer */
 
 footer {
-  color: #ffffff;
+  color: #fff;
   background: #235093;
   font-family: var(--texto-gral);
   font-weight: 300;
@@ -290,7 +281,6 @@ footer {
   font-family: var(--texto-gral);
   background-color: #183c4b;
   color: #fff;
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 30px;

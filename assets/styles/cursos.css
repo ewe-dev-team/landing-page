@@ -149,7 +149,6 @@
   border: solid 1px var(--rosa-ewe);
   box-sizing: border-box;
   border-radius: 30px;
-  
 }
 
 .info-container h2 {
@@ -241,7 +240,6 @@
   font-weight: 300;
   font-size: 21px;
   font-family: var(--subtitulos);
-  font-weight: 300;
 }
 
 .conv-container p {

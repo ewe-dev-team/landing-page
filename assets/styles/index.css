@@ -49,7 +49,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  position: relative; 
+  position: relative;
   margin-bottom: 30px;
 }
 
@@ -168,7 +168,7 @@
 }
 
 #forma-trabajo {
-  padding-bottom: 25px 0;
+  padding-bottom: 25px;
   background: linear-gradient(180deg, #fff, var(--azul-claro-ewe));
 }
 
@@ -176,7 +176,7 @@
   height: 200px;
 }
 
-#title-trabajo h2{
+#title-trabajo h2 {
   font-size: 30px;
   font-family: var(--subtitulos);
   color: #000;
@@ -261,7 +261,6 @@
 }
 
 #porque-title h1 {
-  font-size: 30px;
   color: var(--azul-fuerte-ewe);
   background-color: var(--rosa-ewe);
   margin: 0;
@@ -273,7 +272,7 @@
 }
 
 .bubble {
-  background-image: url(../images/globo-rosa.png);
+  background-image: url(../images/globo-azul.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 330px;
@@ -283,12 +282,11 @@
   justify-content: center;
   position: relative;
   left: -50px;
-  position: relative;
   margin-top: 70px;
 }
 
 .bubble img {
-  width: 150px;
+  width: 160px;
   position: absolute;
   top: -110px;
   right: 105px;
@@ -320,7 +318,7 @@
 }
 
 .porque-div img {
-  width: 80px;
+  width: 100px;
 }
 
 #carita {
@@ -382,7 +380,6 @@
 #como-title h2 {
   font-size: 30px;
   color: #000;
-  margin: 0;
   font-weight: 300;
   border-radius: 10px;
   font-family: var(--subtitulos);
@@ -416,17 +413,24 @@
 }
 
 .cu-card img {
-  height: 100px;
+  height: 80px;
+  margin-top: auto;
+}
+
+#cerebro-cu {
+  height: 120px;
+  position: absolute;
+  bottom: 20px;
+  right: -32px;
 }
 
 .cu-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   background-color: var(--rosa-ewe);
   border-radius: 20px;
-  height: 325px;
+  min-height: 385px;
   width: 165px;
   padding: 20px;
   box-sizing: border-box;
@@ -539,7 +543,6 @@
   }
 }
 
-
 @media (min-width: 1024px) {
   #inicio-main {
     flex-direction: row;
@@ -577,7 +580,6 @@
 
   #img-1 {
     height: 300px;
-
     top: -57px;
     right: -123px;
   }
@@ -666,10 +668,20 @@
 
   .cu-div {
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
   }
 
   .cu-card {
-    width: 200px;
+    width: 240px;
+    min-height: 330px;
+  }
+
+  .cu-card img {
+    height: 90px;
+  }
+
+  #cerebro-cu {
+    right: -35px;
+    height: 160px;
   }
 }
