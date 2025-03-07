@@ -22,8 +22,10 @@
   font-weight: 300;
 }
 
-.test-logo h2:nth-child(3) {
+.test-logo h2:nth-child(4) {
   align-self: flex-end;
+  right: -25px;
+  position: relative;
 }
 
 .test-logo h1 {
@@ -31,12 +33,23 @@
   color: var(--rojo-ewe);
   margin: 0;
   font-family: var(--titulos);
-  background-color: var(--rosa-ewe);
   line-height: 40%;
-  border-radius: 15px;
   right: 0;
   top: 87px;
   white-space: nowrap;
+  z-index: 1;
+}
+
+#test-span {
+  width: 270px;
+  height: 55px;
+  background-color: var(--rosa-ewe);
+  display: flex;
+  position: absolute;
+  z-index: 0;
+  border-radius: 20px;
+  bottom: 62px;
+  left: 26px;
 }
 
 .test-view p {

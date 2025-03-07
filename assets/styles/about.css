@@ -20,11 +20,22 @@
   color: var(--rosa-ewe);
   margin: 50px 0;
   font-family: var(--titulos);
-  background-color: var(--naranja-ewe);
   line-height: 40%;
-  border-radius: 10px;
   width: fit-content;
   white-space: nowrap;
+  z-index: 1;
+}
+
+#about-span {
+  width: 325px;
+  height: 55px;
+  background-color: var(--naranja-ewe);
+  display: flex;
+  position: absolute;
+  z-index: 0;
+  border-radius: 20px;
+  bottom: 20px;
+  left: 16px;
 }
 
 .about-title img {

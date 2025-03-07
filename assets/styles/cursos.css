@@ -31,10 +31,21 @@
   color: var(--rojo-ewe);
   margin: 0;
   padding: 0 15px;
-  background-color: var(--rosa-ewe);
-  border-radius: 10px;
   line-height: 40%;
   margin-top: 20px;
+  z-index: 1;
+}
+
+#cursos-span {
+  width: 255px;
+  height: 55px;
+  background-color: var(--rosa-ewe);
+  display: flex;
+  position: absolute;
+  z-index: 0;
+  border-radius: 20px;
+  bottom: -18px;
+  left: 40px;
 }
 
 .intro-niveles {
@@ -64,11 +75,23 @@
   font-size: 110px;
   color: var(--azul-fuerte-ewe);
   font-family: var(--titulos);
-  background-color: var(--naranja-ewe);
   line-height: 40%;
-  border-radius: 10px;
   margin: 20px 0;
   white-space: nowrap;
+  z-index: 1;
+  position: relative;
+}
+
+#niveles-span {
+  width: 255px;
+  height: 55px;
+  background-color: var(--naranja-ewe);
+  display: flex;
+  position: absolute;
+  z-index: 0;
+  border-radius: 20px;
+  bottom: -3px;
+  left: 14px;
 }
 
 .btn-div {
