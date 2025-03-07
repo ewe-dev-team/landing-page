@@ -65,6 +65,7 @@
   #inscr {
     flex: 1;
     justify-content: center;
+    overflow: unset;
   }
 
   #inscr h3 {
