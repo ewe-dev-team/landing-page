@@ -38,3 +38,16 @@ document.addEventListener('DOMContentLoaded', () => {
   slideInRightElements.forEach((element) => observer.observe(element));
   zoomInElements.forEach((element) => observer.observe(element));
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('.nav-link');
+  const currentFile = window.location.pathname.split('/').pop(); // Obtiene solo el nombre del archivo
+
+  navLinks.forEach((link) => {
+    const linkFile = link.getAttribute('href').split('/').pop(); // Obtiene solo el nombre del archivo del enlace
+
+    if (linkFile === currentFile) {
+      link.style.color = '#ca1217';
+    }
+  });
+});
