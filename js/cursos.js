@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'DESPEGANDO CON CONFIANZA.',
       description: 'ATRÉVETE A VOLAR MÁS ALTO.',
       details: [
-        'Conecta ideas,expresa tus experiencias, metas y opiniones con mayor soltura y aborda nuevos horizontes en tu aprendizaje. Desenvuelvete en viajes y en conversaciones sobre temas familiares o de interés personal. Comprende los puntos principales de textos claros, sigue películas o programas con lenguaje estándar y escribe textos simples pero conectados.',
+        'Conecta ideas, expresa tus experiencias, metas y opiniones con mayor soltura y aborda nuevos horizontes en tu aprendizaje. Desenvuelvete en viajes y en conversaciones sobre temas familiares o de interés personal. Comprende los puntos principales de textos claros, sigue películas o programas con lenguaje estándar y escribe textos simples pero conectados.',
         'Ideal para: Personas que desean comunicarse cómodamente en inglés en el día a día.',
       ],
       sublevels: [
