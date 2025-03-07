@@ -46,7 +46,7 @@
 .fade-in,
 .slide-in-left {
   opacity: 0;
-  transition: all 0.6s ease-out;
+  transition: all 1.5s ease-out;
 }
 
 .fade-in.visible {
@@ -90,7 +90,7 @@
 .slide-in-right {
   opacity: 0;
   transform: translateX(100px);
-  transition: all 0.6s ease-out;
+  transition: all 1s ease-out;
 }
 
 .slide-in-right.visible {
@@ -101,12 +101,32 @@
 .zoom-in {
   opacity: 0;
   transform: scale(0.5);
-  transition: all 0.6s ease-out;
+  transition: all 1s ease-out;
 }
 
 .zoom-in.visible {
   opacity: 1;
   transform: scale(1);
+}
+
+@keyframes bounce {
+  10% { transform: scale(1); }
+  40% { transform: scale(1.1); } /* Crece un poco */
+  50% { transform: scale(0.95); } /* Se hace más pequeño */
+  60% { transform: scale(1.05); } /* Rebote extra */
+  80% { transform: scale(1); } /* Vuelve a su tamaño normal */
+}
+
+.bouncing-button {
+  color: white;
+  font-size: 18px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: bounce 1.5s ease-in-out infinite;
+  animation-delay: 1s;
 }
 
 html,
@@ -119,7 +139,6 @@ body {
 #navbar {
   background-color: var(--azul-claro-ewe);
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 100px;
   width: 100%;
@@ -131,6 +150,7 @@ body {
 
 .logo-ewe {
   height: 80px;
+  margin-right: 10px;
 }
 
 #nav-desktop {
@@ -148,6 +168,7 @@ body {
   height: min-content;
   padding: 0;
   display: flex;
+  margin-left: auto;
   align-items: center;
   justify-content: center;
   border: none;
@@ -175,7 +196,7 @@ body {
 
 #whatsapp img {
   height: 50px;
-  animation: bounceAndRotate 4s infinite;
+  animation: bounceAndRotate 3s infinite;
 }
 
 /* Nav Menu */
@@ -289,7 +310,7 @@ footer {
   padding: 0;
   position: relative;
   z-index: 4;
-  display: none;
+  display: flex;
 }
 
 .sub-footer p {

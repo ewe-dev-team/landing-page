@@ -42,9 +42,10 @@
 
   <main class="niveles">
 
-  <div class="titulo-niveles">
+  <div class="titulo-niveles zoom-in">
     <h2>Nuestros</h2>
     <h1>CURSOS</h1>
+    <span id="cursos-span"></span>
   </div>
 
   <div class="intro-niveles slide-in-left">
@@ -53,24 +54,28 @@
     <h2>Nuestro programa sigue el Marco Común Europeo de Referencia para las Lenguas (CEFR), cubriendo los niveles A1 a B2, cada uno dividido en dos subniveles para facilitar el aprendizaje progresivo.</h2>
   </div>
 
-  <h2 id="btn-div-title" class="fade-in">NIVELES</h2>
+  <div class="niveles-title zoom-in">
+    <h2 id="btn-div-title">NIVELES</h2>
+    <span id="niveles-span"></span>
+  </div>
+  
 
-  <div class="btn-div">
+  <div class="btn-div slide-in-right">
     <button type="button" id="a1" data-level="A1">
       <img src="../assets/images/a1-icon.png" alt="Level Icon">
-      <h2>A1</h2>
+      <h2 class="bouncing-button">A1</h2>
     </button>
     <button type="button" id="a2" data-level="A2">
       <img src="../assets/images/a2-icon.png" alt="Level Icon">
-      <h2>A2</h2>
+      <h2 class="bouncing-button">A2</h2>
     </button>
     <button type="button" id="b1" data-level="B1">
       <img src="../assets/images/b1-icon.png" alt="Level Icon">
-      <h2>B1</h2>
+      <h2 class="bouncing-button">B1</h2>
     </button>
     <button type="button" id="b2" data-level="B2">
       <img src="../assets/images/b2-icon.png" alt="Level Icon">
-      <h2>B2</h2>
+      <h2 class="bouncing-button">B2</h2>
     </button>
   </div>
 
@@ -78,7 +83,7 @@
     <!-- Contenido en JS -->
   </div>
 
-  <button type="button" id="conv-btn">ADVANCED CONVERSATIONAL</button>
+  <button class="zoom-in bouncing-button" type="button" id="conv-btn">ADVANCED CONVERSATIONAL</button>
   <div id="conv-info">
     <!-- Contenido en JS -->
   </div>

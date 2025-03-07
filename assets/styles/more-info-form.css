@@ -5,11 +5,11 @@ body {
 
 .form-section {
   flex: 1;
+  justify-content: center;
   padding: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
   padding-top: 100px;
   background: linear-gradient(180deg, #ffb4bade, #fff);
 }
@@ -63,6 +63,7 @@ body {
 }
 
 #birthdate {
+  width: 38%;
   margin-left: auto;
   color: rgb(104, 104, 104);
 }
@@ -87,16 +88,4 @@ body {
 
 .form-btn {
   margin-left: auto;
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .form-section {
-    flex: 1;
-    justify-content: center;
-  }
 }

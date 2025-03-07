@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     convContainer.style.display = 'flex';
     convContainer.innerHTML = convHtml;
-    convContainer.scrollIntoView({ behavior: 'smooth' });
+    convContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
   });
 
   document.addEventListener('click', (event) => {
