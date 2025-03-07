@@ -24,6 +24,11 @@
   width: fit-content;
   white-space: nowrap;
   z-index: 1;
+  position: relative;
+}
+
+#about-span-div  {
+  position: relative;
 }
 
 #about-span {
